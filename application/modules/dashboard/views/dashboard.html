@@ -1,0 +1,251 @@
+<script type="text/javascript">
+		var chart;
+		var chart2;
+		var chart3;
+		var chart4;
+
+		$(document).ready(function() {
+		
+			chart = new Highcharts.Chart({
+				chart: {
+					renderTo: 'container2',
+					defaultSeriesType: 'line',
+					margin: [50, 150, 60, 80]
+				},
+				title: {
+					text: 'Monthly Manifests in {year}',
+					style: {
+						margin: '0' // center it
+					}
+				},
+				subtitle: {
+					text: '',
+					style: {
+						margin: '0' // center it
+					}
+				},
+				xAxis: {
+					categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+						'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+					title: {
+						text: 'Month'
+					}
+				},
+				yAxis: {
+					title: {
+						text: ''
+					},
+					plotLines: [{
+						value: 0,
+						width: 1,
+						color: '#808080'
+					}]
+				},
+				tooltip: {
+					formatter: function() {
+			                return '<b>'+ this.series.name +'</b><br/>'+this.x +': '+ this.y +'pax';
+					}
+				},
+				legend: {
+					layout: 'vertical',
+					style: {
+						left: 'auto',
+						bottom: 'auto',
+						right: '10px',
+						top: '100px'
+					}
+				},
+				series: [{
+						name: 'Manifest',
+						data: [{total6}]
+					}]
+			});
+			
+			
+			
+			chart3 = new Highcharts.Chart({
+				chart: {
+					renderTo: 'container1',
+					defaultSeriesType: 'line',
+					margin: [50, 150, 60, 80]
+				},
+				title: {
+					text: 'Monthly VISA Orders in {year}',
+					style: {
+						margin: '0' // center it
+					}
+				},
+				subtitle: {
+					text: '',
+					style: {
+						margin: '0' // center it
+					}
+				},
+				xAxis: {
+					categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+						'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+					title: {
+						text: 'Month'
+					}
+				},
+				yAxis: {
+					title: {
+						text: ''
+					},
+					plotLines: [{
+						value: 0,
+						width: 1,
+						color: '#808080'
+					}]
+				},
+				tooltip: {
+					formatter: function() {
+			                return '<b>'+ this.series.name +'</b><br/>'+this.x +': '+ this.y +' USD';
+					}
+				},
+				legend: {
+					layout: 'vertical',
+					style: {
+						left: 'auto',
+						bottom: 'auto',
+						right: '10px',
+						top: '100px'
+					}
+				},
+				series: [{
+						name: 'Orders',
+						data: [{total7}]
+					}]
+			});
+			
+			
+			chart2 = new Highcharts.Chart({
+				chart: {
+					renderTo: 'container-pie1'
+				},
+				title: {
+					text: 'TOP 5'
+				},
+				plotArea: {
+					shadow: null,
+					borderWidth: null,
+					backgroundColor: null
+				},
+				tooltip: {
+					formatter: function() {
+						return '<b>'+ this.point.name +'</b>: '+ this.y +' Manifest';
+					}
+				},
+				plotOptions: {
+					pie: {
+						allowPointSelect: true,
+						dataLabels: {
+							enabled: false,
+							formatter: function() {
+								if (this.y > 5) return this.point.name;
+							},
+							color: 'white',
+							style: {
+								font: '13px Trebuchet MS, Verdana, sans-serif'
+							}
+						}
+					}
+				},
+				legend: {
+					layout: 'vertical',
+					style: {
+						left: 'auto',
+						bottom: 'auto',
+						right: 'auto',
+						top: '100px'
+					}
+				},
+			        series: [{
+					type: 'pie',
+					name: 'Customers',
+					data: [
+						{total5}
+					]
+				}]
+			});
+			
+			
+			chart4 = new Highcharts.Chart({
+				chart: {
+					renderTo: 'container-pie2'
+				},
+				title: {
+					text: 'TOP 5'
+				},
+				plotArea: {
+					shadow: null,
+					borderWidth: null,
+					backgroundColor: null
+				},
+				tooltip: {
+					formatter: function() {
+						return '<b>'+ this.point.name +'</b>: '+ this.y +' %';
+					}
+				},
+				plotOptions: {
+					pie: {
+						allowPointSelect: true,
+						dataLabels: {
+							enabled: false,
+							formatter: function() {
+								if (this.y > 5) return this.point.name;
+							},
+							color: 'white',
+							style: {
+								font: '13px Trebuchet MS, Verdana, sans-serif'
+							}
+						}
+					}
+				},
+				legend: {
+					layout: 'vartical',
+					style: {
+						left: 'auto',
+						bottom: 'auto',
+						right: 'auto',
+						top: '100px'
+					}
+				},
+			        series: [{
+					type: 'pie',
+					name: 'Customers',
+					data: [
+						{total8}
+					]
+				}]
+			});
+			
+			
+		});
+		</script>
+		
+        <div class="row">
+          <div class="span9">
+            <h2>Selamat datang di CMS - INAPROC<br/></h2>
+            <p class="dashboard">Admin Site</p>
+
+            <table class="attr borders">
+            	<tr>
+            		<th>Halaman</th>
+					<th>Di Lihat</th>
+            	</tr>
+            	{list}
+            	<tr>
+            		<td class="td-content">{page}</td><td class="td-content">{pageviews}</td>
+            	</tr>
+            	{/list}
+            </table>
+
+
+          </div>
+          <div class="clear"></div>
+
+		  
+			<!-- dashboard -->
+      </div>
+</div>

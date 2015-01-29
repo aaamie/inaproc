@@ -1,0 +1,379 @@
+<script>
+	  CKEDITOR.replace( 'content',
+            				{
+						skin : 'moono-dark',
+						filebrowserBrowseUrl : '{base_url}ckfinder/ckfinder.html',
+											 filebrowserImageBrowseUrl : '{base_url}ckfinder/ckfinder.html?Type=Images',
+											 filebrowserFlashBrowseUrl : '{base_url}ckfinder/ckfinder.html?Type=Flash',
+											 filebrowserUploadUrl : '{base_url}ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+											 filebrowserImageUploadUrl : '{base_url}ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+											 filebrowserFlashUploadUrl : '{base_url}ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash',
+						toolbar :
+						[
+							['Source','-','Preview','Cut','Copy','Paste','PasteFromWord','PasteText'],
+							['Bold','Italic','Underline','Strike','-','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
+							'/',
+							['NumberedList','BulletedList','Subscript','Superscript',],
+							['Link','Unlink','-','Movie','Image','Anchor','Table','Smiley','SpecialChar'],['TextColor','BGColor','-','FontSize']
+						]
+					});
+
+ CKEDITOR.replace( 'keterangan',
+            				{
+						skin : 'moono-dark',
+						filebrowserBrowseUrl : '{base_url}ckfinder/ckfinder.html',
+											 filebrowserImageBrowseUrl : '{base_url}ckfinder/ckfinder.html?Type=Images',
+											 filebrowserFlashBrowseUrl : '{base_url}ckfinder/ckfinder.html?Type=Flash',
+											 filebrowserUploadUrl : '{base_url}ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+											 filebrowserImageUploadUrl : '{base_url}ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+											 filebrowserFlashUploadUrl : '{base_url}ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash',
+						toolbar :
+						[
+							['Source','-','Preview','Cut','Copy','Paste','PasteFromWord','PasteText'],
+							['Bold','Italic','Underline','Strike','-','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
+							'/',
+							['NumberedList','BulletedList','Subscript','Superscript',],
+							['Link','Unlink','-','Movie','Image','Anchor','Table','Smiley','SpecialChar'],['TextColor','BGColor','-','FontSize']
+						]
+					});
+					
+      var config = {
+          '#ref3'           : {},
+          '#ref3-deselect'  : {allow_single_deselect:true},
+          '#ref3-no-single' : {disable_search_threshold:10},
+          '#ref3-no-results': {no_results_text:'Oops, nothing found!'},
+          '#ref3-width'     : {width:"95%"},
+		  '#ref2'           : {},
+          '#ref2-deselect'  : {allow_single_deselect:true},
+          '#ref2-no-single' : {disable_search_threshold:10},
+          '#ref2-no-results': {no_results_text:'Oops, nothing found!'},
+          '#ref2-width'     : {width:"95%"}
+        }
+        for (var selector in config) {
+          $(selector).chosen(config[selector]);
+    }
+	
+
+		$('.dates').datepicker({
+			dateFormat: 'yy-mm-dd',
+			showOtherMonths: true,
+			changeMonth: true,
+			changeYear: true
+		});
+	
+    	$('#dates2').datetimepicker({
+			dateFormat: 'yy-mm-dd',
+			showOtherMonths: true,
+			changeMonth: true,
+			changeYear: true
+		});
+    
+		$('div.ui-datepicker').css("font-size","10px;");
+		
+		$(document).ready(function(){
+			$("#findp").click(function(){
+				$("#findPenyedia #error_msg").addClass("hide");
+				$("#findPenyedia #success_msg").addClass("hide");
+				$("#findPenyedia #notify").addClass("hide");
+				$("#findPenyedia #id_penyedia").val("");
+				$("#findPenyedia #rkn_input").val("");
+				$("#searchs").removeAttr("disabled");
+				$("#tabel").html("");
+				$("#findPenyedia").dialog({
+					modal : true,
+					height: 620,
+					width: 1130,
+					buttons: {
+						Close: function() {
+							$( this ).dialog( "close" );
+						},
+						Save: function() {//alert($("#rknid").val());
+							var arr = $("#rknid").val().split(";").slice(0,-1);//alert(arr[0]);
+							var a = 0;
+							var data1 = "";
+							var data = "";
+							var hidden = "";
+							$.each(arr,function(i,val){
+								data1 = arr[a].split("~");
+								data += '<tr id="'+data1[0]+'" onclick="delRow(this.id,0)"><td width="20%"><a id="delete_btn_up" class="btn-reset deleteLink" title="Delete" style="width: 20;" rel="tooltip" href="javascript:void(0)"><span class="white-icon-trash"></span></a></td><td class="td-content center">'+data1[0]+'</td><td class="td-content">'+data1[1]+'</td><td class="td-content">'+data1[2]+'</td><td class="td-content center">'+data1[3]+'</td><td class="td-content">'+data1[4]+'</td><input type="hidden" name="rekanid[]" value="'+data1[0]+'"/></tr>';
+								//hidden += data1[0]+'~';
+								a++;
+							});
+							datas = arr[0].split("~");
+							$("#nama_penyedia").val(datas[2]);
+							$("#npwp_").val(datas[3]);
+//							$("#hiddenrkn").val(hidden.slice(0,-1));
+							$(data).appendTo("#blacklis");
+							setTimeout(function(){$( this ).dialog( "close" )},1000)
+						}
+					}
+				});
+			});
+			
+			$("#searchs").click(function(){
+				if($("#findPenyedia #id_penyedia").val()=="" && $("#findPenyedia #rkn_input").val()==""){
+					$("#findPenyedia #error_msg").text("Mohon lengkapi isian diatas");
+					$("#findPenyedia #error_msg").fadeIn("slow");
+				}else if($("#findPenyedia #id_penyedia").val()==""){
+					$("#findPenyedia #rkn_input").focus();
+					$("#findPenyedia #error_msg").text("Mohon lengkapi isian yang masih kosong");
+					$("#findPenyedia #error_msg").show();
+				}else if($("#findPenyedia #rkn_input").val()=="" || $("#findPenyedia #rkn_input").val()==0){
+					$("#findPenyedia #rkn_input").focus();
+					$("#findPenyedia #error_msg").text("Mohon lengkapi isian yang masih kosong");
+					$("#findPenyedia #error_msg").show();
+				}else{
+					var inputs = $("#findPenyedia #rkn_input").val();
+					var id = $("#findPenyedia #id_penyedia").val();
+					$.ajax({
+						url : '{base_url}admin_daftar_hitam/getRkn',
+						type : 'POST',
+						data : {value:inputs,select:id},
+						success : function(data){
+							$("#findPenyedia #error_msg").hide();
+							$("#findPenyedia #success_msg").text("Success");
+							$("#findPenyedia #success_msg").fadeIn("fast");
+							$("#findPenyedia #success_msg").fadeOut(7000);
+							$("#searchs").attr("disabled","true");
+							$("#findPenyedia #notify").text("Tekan / klik tombol Reset untuk melakukan pencarian ulang.");
+							$("#findPenyedia #notify").fadeIn("fast");
+							$("#tabel").html(data);
+							//$("#findPenyedia").dialog("close");
+						}
+					});
+				}
+			});
+			
+			$("#reset").click(function(){
+				$("#findPenyedia #error_msg").fadeOut("slow");
+				$("#findPenyedia #success_msg").fadeOut("slow");
+				$("#findPenyedia #notify").fadeOut("slow");
+				$("#findPenyedia #id_penyedia").val("");
+				$("#findPenyedia #rkn_input").val("");
+				$("#searchs").removeAttr("disabled");
+			});
+			
+			$("#showBlacklisted").click(function(){
+				$("#blacklist").slideToggle();
+			});
+		});
+		
+		function delRow(id,idhal){
+			if(idhal>0){
+				$.ajax({
+					url:'{admin_url}{title_link}/delbl/',
+					type:'POST',
+					data:{idbl:id,iddh:idhal},
+					success:function(data){
+						//alert(id);return false;
+						$("#"+id).remove();
+					},
+					error:function(){
+						alert("failed");
+					}
+				});
+			}else{
+				$("#"+id).remove();
+			}
+			return false;
+		}
+
+</script>
+ 
+        <ul id="breadcrumb">
+            <li><a href="{admin_url}index/" title="Home"><span class="icon-home"></span></a></li>
+            <li><a href="{admin_url}{title_link}"><span>{title_head}</span></a></li>
+            <li><span>{add_edit}</span></li>
+        </ul>
+        <div class="clear"></div>
+
+
+        <div class="row">
+          <div class="span14">
+            {notif}
+            <div class="alert-message {notif_class}" data-alert="alert" >
+                <a class="close" data-dismiss="alert" href="#">&times;</a>
+                <p><strong>Notification</strong><br />{notif_title}</p>
+          	</div>
+            {/notif}
+	    
+
+	    <h2>{add_edit}</h2>
+            {list}
+            <form name="form_list" method="POST" action="{admin_url}{title_link}/submit" enctype="multipart/form-data" class="navbar-content">
+			<table>
+				<tr>
+				<td class="no-border">
+
+
+					 <p>Nama Penyedia</p>
+					 <input type="input" name="nama_penyedia" id="nama_penyedia" value="{nama_penyedia}" class="required" readonly placeholder="Nama Penyedia"/>
+					 <input type="button" id="findp" class="btn btn-primary" value="Cari Penyedia"/>
+					 <br />
+					 <!--<input type="button" id="showBlacklisted" class="btn btn-info" value="Informasi user"/>-->
+					 <div id="blacklist">
+						<div class="row">
+						  <div class="span_full">
+						    <h2>{title}</h2>
+						        <table id="blacklis" class="attr borders">
+									<tr>
+										<th width="5%">#</th>
+										<th width="10%">ID</th>
+										<th width="20%">Username</th>
+										<th width="20%">Nama</th>
+										<th width="10%">NPWP</th>
+										<th width="20%">Alamat</th>
+									</tr>
+									{blacklisted}
+						          	<tr onclick="delRow({rkn_id},{id})" class="record" id="{rkn_id}">
+										<td width="20%">
+											<a id="delete_btn_up" class="btn-reset deleteLink" title="Delete" style="width: 20;" rel="tooltip" href="javascript:void(0)">
+												<span class="white-icon-trash"></span>
+											</a>
+										</td>
+										<td class="td-content center">{rkn_id}</td>
+										<td class="td-content">{user}</td>
+										<td class="td-content">{name}</td>
+										<td class="td-content center">{rkn_npwp}</td>
+										<td class="td-content">{rkn_alamat}</td>
+										<input type="hidden" name="rekanid[]" value="{rkn_id}"/>
+									</tr>
+									{/blacklisted}
+						         </table>
+						  </div>
+						</div>
+					 </div>
+					 <hr />
+
+					 <p>NPWP Perusahaan</p>
+					 <input type="input" id="npwp_" name="npwp" value="{npwp}" class="required" placeholder="NPWP Perusahaan"/>
+					 <hr />
+
+					 <p>Penandatangan Kontrak</p>
+					 <input type="input" name="direktur" value="{direktur}" class="required" placeholder="Penandatangan Kontrak"/>
+					 <hr />
+
+					 <p>NPWP Direktur</p>
+					 <input type="input" name="npwp_direktur" value="{npwp_direktur}" class="required" placeholder="NPWP Direktur"/>
+					 <hr />
+				 	
+				 	<p>SK</p>
+					 <input type="input" name="sk" value="{sk}" class="required" placeholder="SK"/>
+					 <hr />
+
+					 <p>Tanggal Berlaku Dari</p>
+					 <input type="input" name="tgl_berlaku" value="{tgl_berlaku}" class="required dates" placeholder="Tanggal Berlaku Dari"/>
+					 <hr />
+
+					  <p>Tanggal Berlaku Sampai</p>
+					 <input type="input" name="tgl_penayangan" value="{tgl_penayangan}" class="required dates" placeholder="Tanggal Berlaku Sampai"/>
+					 <hr />
+
+					  <p>Alamat</p>
+					 <table style="width:auto !important;">
+						 <tr><td class="no-border">
+							<textarea id="content" name="alamat" rows="15" cols="80" style="width: 80%" placeholder="Alamat">{alamat}</textarea>
+						 </td></tr>
+					 </table>
+					 <hr />
+
+					  <p>Kab/Kota</p>
+					  <select name="kab_kota">
+					 {ref5}
+					</select>
+					 <hr />
+
+					  <p>Propinsi</p>
+					 <select name="propinsi_id">
+					 {ref4}
+					 </select>
+					  <hr />
+					  <p>Alasan Terdaftar</p>
+					 <input type="input" name="alasan_terdaftar" value="{alasan_terdaftar}" class="required" placeholder="Alasan Terdaftar"/>
+					 <hr />
+
+					   <p>Keterangan</p>
+					 <table style="width:auto !important;">
+						 <tr><td class="no-border">
+							<textarea id="keterangan" name="keterangan" rows="15" cols="80" style="width: 80%" placeholder="Keterangan">{keterangan}</textarea>
+						 </td></tr>
+					 </table>
+					 <hr />
+
+				 </td>
+				 <td class="sidebar-right no-border">
+					 
+					 <p>Upload SK Blacklist</p>
+					 <a href="{base_url}uploads/documents/{file_image}"><b>{file_image}</b></a> <br>
+					 <input type="hidden" name="file_image_old" value="{file_image}"> 
+					 <input type="file" name="file"><br>
+					  <span style="color:red">*.zip / *.pdf (Max 5MB)</span>
+					 <hr />
+
+					 <p>Upload SK Pencabutan Blacklist</p>
+					 <a href="{base_url}uploads/documents/{file_pencabutan}"><b>{file_pencabutan}</b></a><br>
+					 <input type="hidden" name="file_pencabutan_old" value="{file_pencabutan}"> 
+					 <input type="file" name="file_pencabutan"> <br>
+					  <span style="color:red">*.zip / *.pdf (Max 5MB)</span>
+					 <hr />
+
+					 <p>Aktif</p>
+					 {ref2}
+					 <hr />
+
+					 <p>Created Date <span style="color:red"> Tampilkan? </span><input type="checkbox" value="1" name="show_createdate" {show_createdate} > </p>
+					 <input type="input" name="crete_date" disabled='disabled' value="{create_date}" placeholder="Created Date"/>
+					 <hr />
+					 <p class="required-title"><i class="required-box"></i>Are required</p>
+					 <a href="{admin_url}{title_link}/edit/0" style="{btn_plus}"><input type="button" class="btn info" value="add more" id="more_btn"/></a>
+					 <input type="button" class="btn info" value="save" id="save_btn" onclick="document.form_list.submit();"/>
+					 <a href="{admin_url}{title_link}"><input type="button" class="btn-reset" value="cancel"/></a>
+					 <input type="hidden" name="id" value="{id}"/>
+					 <input type="hidden" name="logs" value="{logs}"/>
+					 <!--<input type="hidden" name="hiddenrkn" id="hiddenrkn" value=""/>-->
+				</td>
+				</tr>
+			</table>
+	    </form>
+            {/list}
+        </div>
+        <div id="findPenyedia" style="display: none;">
+			<!--<form id="search" class="navbar-inner" action="" method="POST">-->
+			<fieldset style="background-color: #ffffff">
+				<h3>Search</h3>
+				<div id="search_box" style="">
+					<table border="0">
+						<tbody>
+							<tr>
+								<td>
+									<select name="id_penyedia" id="id_penyedia" class="required">
+										<option value="">-- Pilih Pencarian --</option>
+										<option value="1">Nama Penyedia</option>
+										<option value="2">NPWP Penyedia</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="text" value="" name="rkn_input" id="rkn_input" class="required">
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div id="error_msg" class="alert-message error fade in" data-alert="alert"></div>
+									<div id="success_msg" class="alert-message success fade in" data-alert="alert"></div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<input class="btn info" type="button" id="searchs" value="Search">
+					<input class="btn-reset" type="button" id="reset" value="Reset">
+					<span id="notify" class="alert-message warning fade in"></span>
+				</div>
+				</fieldset>
+				<fieldset style="background-color: #ffffff">
+					<div id="tabel"></div>
+				</fieldset>
+			<!--</form>-->
+		</div>
+</div>

@@ -1,0 +1,198 @@
+<script>
+	  CKEDITOR.replace( 'content',
+            				{
+						skin : 'moono-dark',
+						filebrowserBrowseUrl : '{base_url}ckfinder/ckfinder.html',
+											 filebrowserImageBrowseUrl : '{base_url}ckfinder/ckfinder.html?Type=Images',
+											 filebrowserFlashBrowseUrl : '{base_url}ckfinder/ckfinder.html?Type=Flash',
+											 filebrowserUploadUrl : '{base_url}ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+											 filebrowserImageUploadUrl : '{base_url}ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+											 filebrowserFlashUploadUrl : '{base_url}ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash',
+						toolbar :
+						[
+							['Source','-','Preview','Cut','Copy','Paste','PasteFromWord','PasteText'],
+							['Bold','Italic','Underline','Strike','-','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
+							'/',
+							['NumberedList','BulletedList','Subscript','Superscript',],
+							['Link','Unlink','-','Movie','Image','Anchor','Table','Smiley','SpecialChar'],['TextColor','BGColor','-','FontSize']
+						]
+					});
+
+ CKEDITOR.replace( 'keterangan',
+            				{
+						skin : 'moono-dark',
+						filebrowserBrowseUrl : '{base_url}ckfinder/ckfinder.html',
+											 filebrowserImageBrowseUrl : '{base_url}ckfinder/ckfinder.html?Type=Images',
+											 filebrowserFlashBrowseUrl : '{base_url}ckfinder/ckfinder.html?Type=Flash',
+											 filebrowserUploadUrl : '{base_url}ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+											 filebrowserImageUploadUrl : '{base_url}ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+											 filebrowserFlashUploadUrl : '{base_url}ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash',
+						toolbar :
+						[
+							['Source','-','Preview','Cut','Copy','Paste','PasteFromWord','PasteText'],
+							['Bold','Italic','Underline','Strike','-','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
+							'/',
+							['NumberedList','BulletedList','Subscript','Superscript',],
+							['Link','Unlink','-','Movie','Image','Anchor','Table','Smiley','SpecialChar'],['TextColor','BGColor','-','FontSize']
+						]
+					});
+					
+      var config = {
+          '#ref3'           : {},
+          '#ref3-deselect'  : {allow_single_deselect:true},
+          '#ref3-no-single' : {disable_search_threshold:10},
+          '#ref3-no-results': {no_results_text:'Oops, nothing found!'},
+          '#ref3-width'     : {width:"95%"},
+		  '#ref2'           : {},
+          '#ref2-deselect'  : {allow_single_deselect:true},
+          '#ref2-no-single' : {disable_search_threshold:10},
+          '#ref2-no-results': {no_results_text:'Oops, nothing found!'},
+          '#ref2-width'     : {width:"95%"}
+        }
+        for (var selector in config) {
+          $(selector).chosen(config[selector]);
+    }
+	
+
+		$('.dates').datepicker({
+			dateFormat: 'yy-mm-dd',
+			showOtherMonths: true,
+			changeMonth: true,
+			changeYear: true
+		});
+	
+    	$('#dates2').datetimepicker({
+			dateFormat: 'yy-mm-dd',
+			showOtherMonths: true,
+			changeMonth: true,
+			changeYear: true
+		});
+    
+		$('div.ui-datepicker').css("font-size","10px;");
+
+</script>
+ 
+        <ul id="breadcrumb">
+            <li><a href="{admin_url}index/" title="Home"><span class="icon-home"></span></a></li>
+            <li><a href="{admin_url}{title_link}"><span>{title_head}</span></a></li>
+            <li><span>{add_edit}</span></li>
+        </ul>
+        <div class="clear"></div>
+
+
+        <div class="row">
+          <div class="span14">
+            {notif}
+            <div class="alert-message {notif_class}" data-alert="alert" >
+                <a class="close" data-dismiss="alert" href="#">&times;</a>
+                <p><strong>Notification</strong><br />{notif_title}</p>
+          	</div>
+            {/notif}
+	    
+
+	    <h2>{add_edit}</h2>
+            {list}
+            <form name="form_list" method="POST" action="{admin_url}{title_link}/submit" enctype="multipart/form-data" class="navbar-content">
+			<table>
+				<tr>
+				<td class="no-border">
+
+
+					 <p>Nama Penyedia</p>
+					 <input type="input" name="nama_penyedia" value="{nama_penyedia}" class="required"/>
+					 <hr />
+
+					 <p>NPWP Perusahaan</p>
+					 <input type="input" name="npwp" value="{npwp}" class="required"/>
+					 <hr />
+
+					 <p>Penandatangan Kontrak</p>
+					 <input type="input" name="direktur" value="{direktur}" class="required"/>
+					 <hr />
+
+					 <p>NPWP Direktur</p>
+					 <input type="input" name="npwp_direktur" value="{npwp_direktur}" class="required"/>
+					 <hr />
+				 	
+				 	<p>SK</p>
+					 <input type="input" name="sk" value="{sk}" class="required"/>
+					 <hr />
+
+					 <p>Tanggal Berlaku Dari</p>
+					 <input type="input" name="tgl_berlaku" value="{tgl_berlaku}" class="required dates"/>
+					 <hr />
+
+					  <p>Tanggal Berlaku Sampai</p>
+					 <input type="input" name="tgl_penayangan" value="{tgl_penayangan}" class="required dates"/>
+					 <hr />
+
+					  <p>Alamat</p>
+					 <table style="width:auto !important;">
+						 <tr><td class="no-border">
+							<textarea id="content" name="alamat" rows="15" cols="80" style="width: 80%">{alamat}</textarea>
+						 </td></tr>
+					 </table>
+					 <hr />
+
+					  <p>Kab/Kota</p>
+					  <select name="kab_kota">
+					 {ref5}
+					</select>
+					 <hr />
+
+					  <p>Propinsi</p>
+					 <select name="propinsi_id">
+					 {ref4}
+					 </select>
+					  <hr />
+					  <p>Alasan Terdaftar</p>
+					 <input type="input" name="alasan_terdaftar" value="{alasan_terdaftar}" class="required"/>
+					 <hr />
+
+					   <p>Keterangan</p>
+					 <table style="width:auto !important;">
+						 <tr><td class="no-border">
+							<textarea id="keterangan" name="keterangan" rows="15" cols="80" style="width: 80%">{keterangan}</textarea>
+						 </td></tr>
+					 </table>
+					 <hr />
+
+					
+
+				 </td>
+				 <td class="sidebar-right no-border">
+					 
+					 <p>Upload SK Blacklist</p>
+					 <a href="{base_url}uploads/documents/{file_image}"><b>{file_image}</b></a> <br>
+					 <input type="hidden" name="file_image_old" value="{file_image}"> 
+					 <input type="file" name="file"><br>
+					  <span style="color:red">*.zip / *.pdf</span>
+					 <hr />
+
+					 <p>Upload SK Pencabutan Blacklist</p>
+					 <a href="{base_url}uploads/documents/{file_pencabutan}"><b>{file_pencabutan}</b></a><br>
+					 <input type="hidden" name="file_pencabutan_old" value="{file_pencabutan}"> 
+					 <input type="file" name="file_pencabutan"> <br>
+					  <span style="color:red">*.zip / *.pdf</span>
+					 <hr />
+
+					 <p>Aktif</p>
+					 {ref2}
+					 <hr />
+
+					 <p>Created Date    <span style="color:red">tampilkan ? </span><input type="checkbox" value="1" name="show_createdate" {show_createdate} > </p>
+					 <input type="input" name="crete_date" disabled='disabled' value="{create_date}"/>
+					 <hr />
+					 <p class="required-title"><i class="required-box"></i>Are required</p>
+					 <a href="{admin_url}{title_link}/edit/0" style="{btn_plus}"><input type="button" class="btn info" value="add more" id="more_btn"/></a>
+					 <input type="button" class="btn info" value="save" id="save_btn" onclick="document.form_list.submit();"/>
+					 <a href="{admin_url}{title_link}"><input type="button" class="btn-reset" value="cancel"/></a>
+					 <input type="hidden" name="id" value="{id}"/>
+					 <input type="hidden" name="logs" value="{logs}"/>
+				</td>
+				</tr>
+			</table>
+	    </form>
+            {/list}
+        </div>
+</div>

@@ -1,0 +1,71 @@
+<script>
+	function placeholders(val){
+		if($('#registered_number').val() == "Nomor Registrasi"){
+			$('#registered_number').val('');
+		}else if($('#registered_number').val() == ""){
+			$('#registered_number').val('Nomor Registrasi');
+		}
+	}
+	
+	function set_search()
+	{
+				$("#loading").css("display","");
+				var err = "";
+				var $form = $( '#search' ),
+				registered_number = $form.find( 'input[name="registered_number"]' ).val(),
+				url = $form.attr( 'action' );
+					
+				if(registered_number == "" || registered_number == "Nomor Registrasi"){
+					err += "Nomor Registrasi harus diisi<br/>";
+				}
+				
+				if(err == ""){
+					$.post(url, {
+							 registered_number: registered_number
+								  },
+					function(data){
+						$("#loading").css("display","none");
+						$("#tracking-view").css("display","");
+						$("#tracking").css("display","none");
+						$("#tracking-view").html(data);
+						
+					});
+				}else{
+					$("#loading").css("display","none");
+					alert(err);	
+				}
+	}
+	
+	function show_search()
+	{
+		$("#tracking-view").css("display","none");
+		$("#tracking-view").html("");
+		$("#tracking").css("display","");
+	}
+	
+	function set_clear()
+	{
+		$('#registered_number').val('Nomor Registrasi');
+	}
+</script>
+<h1 style="text-align:right;"><img src="{admin_url}images/admin_images/logo-nebras.png"/></h1>
+<div id="tracking-view" style="display:none;"></div>
+<div id="tracking">
+<form id="search" method="POST" action="{admin_url}tracking/search" class="navbar-inner">
+
+   <h3>Nebras - FarEast Tracking VISA</h3>
+   <p>Anda dapat melihat informasi terupdate tentang status pengajuan VISA Anda dengan memasukkan Nomor Registrai melalui form di bawah.</p>
+   <div id="search_box">
+        <table border=0>
+			<tr>
+				<td style="padding:0px !important;">
+				<input type="text" onclick="placeholders(this.value);" onblur="placeholders(this.value);" id="registered_number" name="registered_number" style="width:60% !important;margin-top:3px;" value="Nomor Registrasi">
+				<img src="{admin_url}images/admin_images/loading-content.gif" id="loading" style="float:right;margin-right:60px;display:none;"/>
+				</td>
+			</tr>
+		</table>
+        <input type="button" class="btn info" value="Search" onclick="set_search();" />  
+        <input type="button" class="btn-reset" value="Reset" onclick="set_clear();" />
+    </div>
+</form>
+</div>

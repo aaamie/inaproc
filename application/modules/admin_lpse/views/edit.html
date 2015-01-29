@@ -1,0 +1,238 @@
+<script>
+	  CKEDITOR.replace( 'content',
+            				{
+						skin : 'moono-dark',
+						filebrowserBrowseUrl : '{base_url}ckfinder/ckfinder.html',
+											 filebrowserImageBrowseUrl : '{base_url}ckfinder/ckfinder.html?Type=Images',
+											 filebrowserFlashBrowseUrl : '{base_url}ckfinder/ckfinder.html?Type=Flash',
+											 filebrowserUploadUrl : '{base_url}ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+											 filebrowserImageUploadUrl : '{base_url}ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+											 filebrowserFlashUploadUrl : '{base_url}ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash',
+						toolbar :
+						[
+							['Source','-','Preview','Cut','Copy','Paste','PasteFromWord','PasteText'],
+							['Bold','Italic','Underline','Strike','-','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
+							'/',
+							['NumberedList','BulletedList','Subscript','Superscript',],
+							['Link','Unlink','-','Movie','Image','Anchor','Table','Smiley','SpecialChar'],['TextColor','BGColor','-','FontSize']
+						]
+					});
+
+	  CKEDITOR.replace( 'helpdesk',
+            				{
+						skin : 'moono-dark',
+						filebrowserBrowseUrl : '{base_url}ckfinder/ckfinder.html',
+											 filebrowserImageBrowseUrl : '{base_url}ckfinder/ckfinder.html?Type=Images',
+											 filebrowserFlashBrowseUrl : '{base_url}ckfinder/ckfinder.html?Type=Flash',
+											 filebrowserUploadUrl : '{base_url}ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+											 filebrowserImageUploadUrl : '{base_url}ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+											 filebrowserFlashUploadUrl : '{base_url}ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash',
+						toolbar :
+						[
+							['Source','-','Preview','Cut','Copy','Paste','PasteFromWord','PasteText'],
+							['Bold','Italic','Underline','Strike','-','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
+							'/',
+							['NumberedList','BulletedList','Subscript','Superscript',],
+							['Link','Unlink','-','Movie','Image','Anchor','Table','Smiley','SpecialChar'],['TextColor','BGColor','-','FontSize']
+						]
+					});
+
+
+ CKEDITOR.replace( 'anggota',
+            				{
+						skin : 'moono-dark',
+						filebrowserBrowseUrl : '{base_url}ckfinder/ckfinder.html',
+											 filebrowserImageBrowseUrl : '{base_url}ckfinder/ckfinder.html?Type=Images',
+											 filebrowserFlashBrowseUrl : '{base_url}ckfinder/ckfinder.html?Type=Flash',
+											 filebrowserUploadUrl : '{base_url}ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+											 filebrowserImageUploadUrl : '{base_url}ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+											 filebrowserFlashUploadUrl : '{base_url}ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash',
+						toolbar :
+						[
+							['Source','-','Preview','Cut','Copy','Paste','PasteFromWord','PasteText'],
+							['Bold','Italic','Underline','Strike','-','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
+							'/',
+							['NumberedList','BulletedList','Subscript','Superscript',],
+							['Link','Unlink','-','Movie','Image','Anchor','Table','Smiley','SpecialChar'],['TextColor','BGColor','-','FontSize']
+						]
+					});
+
+					
+      var config = {
+          '#ref3'           : {},
+          '#ref3-deselect'  : {allow_single_deselect:true},
+          '#ref3-no-single' : {disable_search_threshold:10},
+          '#ref3-no-results': {no_results_text:'Oops, nothing found!'},
+          '#ref3-width'     : {width:"95%"},
+		  '#ref2'           : {},
+          '#ref2-deselect'  : {allow_single_deselect:true},
+          '#ref2-no-single' : {disable_search_threshold:10},
+          '#ref2-no-results': {no_results_text:'Oops, nothing found!'},
+          '#ref2-width'     : {width:"95%"}
+        }
+        for (var selector in config) {
+          $(selector).chosen(config[selector]);
+    }
+	
+
+		$('#dates').datepicker({
+			dateFormat: 'yy-mm-dd',
+			showOtherMonths: true,
+			changeMonth: true,
+			changeYear: true
+		});
+	
+    	$('#dates2').datetimepicker({
+			dateFormat: 'yy-mm-dd',
+			showOtherMonths: true,
+			changeMonth: true,
+			changeYear: true
+		});
+    
+		$('div.ui-datepicker').css("font-size","10px;");
+
+		function tampilkanStandar(val){
+			var val;
+
+			if(val=='Tidak'){
+				$('#standarisasi_list').hide();
+			}else{
+				$('#standarisasi_list').show();
+			}
+		}
+
+</script>
+ 
+        <ul id="breadcrumb">
+            <li><a href="{admin_url}index/" title="Home"><span class="icon-home"></span></a></li>
+            <li><a href="{admin_url}{title_link}"><span>{title_head}</span></a></li>
+            <li><span>{add_edit}</span></li>
+        </ul>
+        <div class="clear"></div>
+
+
+        <div class="row">
+          <div class="span14">
+            {notif}
+            <div class="alert-message {notif_class}" data-alert="alert" >
+                <a class="close" data-dismiss="alert" href="#">&times;</a>
+                <p><strong>Notification</strong><br />{notif_title}</p>
+          	</div>
+            {/notif}
+	    
+
+	    <h2>{add_edit}</h2>
+            {list}
+            <form name="form_list" method="POST" action="{admin_url}{title_link}/submit" enctype="multipart/form-data" class="navbar-content">
+			<table>
+				<tr>
+				<td class="no-border">
+
+					<p>ID LPSE</p>
+					 <input type="input" name="id" value="{id}" class="required"/>
+					 <hr />
+
+
+					 <input type="input" name="nama" value="{nama}" class="required"/>
+					 <hr />
+
+					 <p>Provinsi</p>
+					 <select name="provinsi_id">
+					 {ref4}
+					 </select>
+					 <hr />
+
+					 <p>Kabupaten</p>
+					 <select name="kabupaten_id">
+					 {ref5}
+					 </select>
+					 <hr />
+
+					  <p>Status Server</p>
+					 <select name="status_server">
+					 {ref6}
+					 </select>
+					 <hr />
+
+					  <p>URL</p>
+					 <input type="input" name="url" value="{url}" class="required"/>
+					 <hr />
+					  <p>Total Lelang</p>
+					 <input type="input" name="total_lelang" value="{total_lelang}" class="required"/>
+					 <hr />
+					  <p>Helpdesk</p>
+					 <table style="width:auto !important;">
+						 <tr><td class="no-border">
+							<textarea id="helpdesk" name="helpdesk" rows="15" cols="80" style="width: 80%">{helpdesk}</textarea>
+						 </td></tr>
+					 </table>
+					 <hr />
+
+					  <p>Personil</p>
+	
+					  <table style="width:auto !important;">
+						 <tr><td class="no-border">
+							<textarea id="anggota" name="anggota" rows="15" cols="80" style="width: 80%">{anggota}</textarea>
+						 </td></tr>
+					 </table>
+
+					
+					 <hr />
+
+					  <p>Standarisasi</p>
+					  <select name='standarisasi' onchange="tampilkanStandar(this.value)">
+						{ref3}
+						</select>
+					 <hr />
+					 <div id="standarisasi_list" {tampil}>
+					  <p>Standar LPSE : {year}</p>
+					 {list_ref}
+					 <input type='checkbox' value='{valref_id}' name="standar_id[]" {checked}> {valref_title} <br>
+					 {/list_ref}
+					 <hr />
+					</div>
+
+					 
+
+					  <p>Latitude</p>
+					 <input type="input" name="lat" value="{lat}" class="required"/>
+					 <hr />
+					  <p>Longitude</p>
+					 <input type="input" name="long" value="{long}" class="required"/>
+					 <hr />
+
+					  <p>Alamat</p>
+					 <table style="width:auto !important;">
+						 <tr><td class="no-border">
+							<textarea id="content" name="alamat" rows="15" cols="80" style="width: 80%">{alamat}</textarea>
+						 </td></tr>
+					 </table>
+					 <hr />
+
+				 </td>
+				 <td class="sidebar-right no-border">
+					 
+					 <p>Upload Image</p>
+					 <b><img src="{base_url}uploads/{file_image}"></a></b><br>
+					 <input type="file" name="file"><input type="hidden" name="file_image_old" value="{file_image}">
+					 <hr />
+
+					 <p>Publish</p>
+					 {ref2}
+					 <hr />
+
+					 <p>Created Date</p>
+					 <input type="input" name="crete_date" disabled='disabled' value="{create_date}"/>
+					 <hr />
+					 <p class="required-title"><i class="required-box"></i>Are required</p>
+					 <a href="{admin_url}{title_link}/edit/0" style="{btn_plus}"><input type="button" class="btn info" value="add more" id="more_btn"/></a>
+					 <input type="button" class="btn info" value="save" id="save_btn" onclick="document.form_list.submit();"/>
+					 <a href="{admin_url}{title_link}"><input type="button" class="btn-reset" value="cancel"/></a>
+					 <input type="hidden" name="id_first" value="{id}"/>
+				</td>
+				</tr>
+			</table>
+	    </form>
+            {/list}
+        </div>
+</div>

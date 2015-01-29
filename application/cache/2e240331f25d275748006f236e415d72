@@ -1,0 +1,1561 @@
+1421920536TS---><!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <title>INAPROC - Portal Pengadaan Nasional</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <!-- Required -->
+    <link href="http://localhost/inaproc/assets/css/global-style.css" rel="stylesheet" type="text/css" media="screen">
+    <!-- <link rel="icon" href="http://localhost/inaproc/images/favicon.png" type="image/png">LayerSlider stylesheet -->
+<link rel="stylesheet" href="http://localhost/inaproc/assets/css/layerslider/css/layerslider.css" type="text/css">
+
+
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "9cce3116-5c94-4377-b1a1-be56fc4c8469", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<!-- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4ecdf0c974ce288f" async></script>
+ -->
+
+ 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55118026-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">
+        var logo1 = "http://localhost/inaproc/images/inaproc-logo-small.png";
+        var logo2 = "http://localhost/inaproc/images/141211031708-inaproc-logo.png";
+    </script>
+
+</head>
+<body>
+
+<div class="wrapper">
+
+<div class="top-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <nav class="top-header-menu">
+                    <ul class="menu">
+                                                <li><a href="http://localhost/inaproc/signin">Login</a></li> 
+                        <!-- <li><a href="http://localhost/inaproc/signin/register">Daftar</a></li>  -->
+                                          
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Header: Logo and Main Nav -->
+<header class="rz_header">    
+    <div id="navOne" class="navbar navbar-wp" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="logo-inaproc navbar-brand" href="http://localhost/inaproc/" title="INAPROC">
+                   <!--  <img id="logo-inaproc" src="http://localhost/inaproc/images/inaproc-logo.png" alt="INAPROC"> -->
+                    <img id="logo-inaproc" src="http://localhost/inaproc/images/141211031708-inaproc-logo.png" alt="INAPROC">
+                </a>
+            </div>
+
+
+             
+
+            <div class="navbar-collapse collapse navbar-right">
+                <ul class="nav navbar-nav navbar-rz">
+                    <li >
+                        <a href="http://localhost/inaproc/home">Beranda</a></li>
+                    <li class='active'>
+                        <a href="http://localhost/inaproc/pengadaan">Pengadaan</a></li>
+                    <li >
+                        <a href="http://localhost/inaproc/daftarhitam">Daftar Hitam</a></li>
+                     <li >
+                        <a href="http://localhost/inaproc/lpse/index/0/0/0">LPSE</a></li>
+                    <li >
+                        <a href="http://localhost/inaproc/unduh" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">Unduh</a>
+                        <ul class="dropdown-menu">
+                                                        <li><a href="http://localhost/inaproc/unduh/catagory/1/Dokumentasi">Dokumentasi</a></li>
+                                                        <li><a href="http://localhost/inaproc/unduh/catagory/5/Lelang">Lelang</a></li>
+                                                        <li><a href="http://localhost/inaproc/unduh/catagory/6/Regulasi">Regulasi</a></li>
+                                                    </ul></li>
+                    <li >
+                        <a href="http://localhost/inaproc/berita">Berita</a></li>
+                    <li >
+                        <a href="http://localhost/inaproc/tentang-kami">Tentang Kami</a></li>
+                    <li class="dropdown animate-click" data-animate="animated fadeInUp" style="z-index:500;">
+                        <a href="#" class="dropdown-toggle dropdown-form-toggle" data-toggle="dropdown"><i class="fa fa-search"></i></a>
+                        <ul class="dropdown-menu dropdown-menu-user animate-wr">
+                            <li id="dropdownForm">
+                                <div class="dropdown-form">
+                                    <form action="http://localhost/inaproc/search/action" method="POST" class="form-default form-inline p-15">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="search" placeholder="ketik kata pencarian...">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-two" type="submit">Cari</button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+               
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+</header>   
+
+
+
+
+
+
+
+
+
+
+<section class="pg-opt pin">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h2>Pengadaan</h2>
+			</div>
+			<div class="col-md-6">
+				<ol class="breadcrumb">
+					<!-- <li><a href="http://localhost/inaproc/">Beranda</a></li> -->
+					<li>Pengadaan</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</section>	
+<!-- -->
+    
+<section class="slice bg-3 pencarian_detail">
+	<div class="w-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-sm-5">
+					<h3>Pencarian Detail</h3>
+				</div>
+				<div class="col-md-4 col-sm-7">
+					<div class="btn-group pull-right view-grid">
+					  <button class="btn active2" disabled>Tampilkan Berdasarkan</button>
+					  <button type="button" class="btn btn-default" onclick="fadeList()"><span class="glyphicon glyphicon-th-list"></span></button>
+					  <button type="button" class="btn btn-default" onclick="fadeBox()"><span class="glyphicon glyphicon-th-large"></span></button>
+					</div>
+				</div>
+			</div>
+			<form role="form" method="post" action="http://localhost/inaproc/pengadaan/search">
+				<div class="row bg-grey1 box-search-home no-margin">
+					<div class="slct-srch-detail">
+							
+				   <select name="propinsi_id" class="form-control">
+				   			<option value="null"> Pilih Lokasi LPSE</option>
+				   										<option value="2">Sumatera Utara</option>
+														<option value="3">Sumatera Barat</option>
+														<option value="6">Sumatera Selatan</option>
+														<option value="7">Bengkulu</option>
+														<option value="8">Lampung</option>
+														<option value="11">DKI Jakarta</option>
+														<option value="12">Jawa Barat</option>
+														<option value="13">Jawa Tengah</option>
+														<option value="14">DI Yogyakarta</option>
+														<option value="15">Jawa Timur</option>
+														<option value="16">Banten</option>
+														<option value="20">Kalimantan Barat</option>
+														<option value="24">Sulawesi Utara</option>
+														<option value="25">Sulawesi Tengah</option>
+														<option value="26">Sulawesi Selatan</option>
+														<option value="27">Sulawesi Tenggara</option>
+														<option value="22">Kalimantan Selatan</option>
+														<option value="23">Kalimantan Timur</option>
+														<option value="21">Kalimantan Tengah</option>
+														<option value="29">Sulawesi Barat</option>
+														<option value="17">Bali</option>
+														<option value="18">Nusa Tenggara Barat</option>
+														<option value="19">Nusa Tenggara Timur</option>
+														<option value="30">Maluku</option>
+														<option value="31">Maluku Utara</option>
+														<option value="32">Papua</option>
+														<option value="4">Riau</option>
+														<option value="5">Jambi</option>
+														<option value="9">Kep. Bangka Belitung</option>
+														<option value="10">Kepulauan Riau</option>
+														<option value="28">Gorontalo</option>
+														<option value="1">Aceh</option>
+														<option value="99">SPSE VARIANT</option>
+														<option value="33">Papua Barat</option>
+														<option value="34">Kalimantan Utara</option>
+												   </select>
+				   </div>
+				   <div class="slct-srch-detail">
+
+				   	
+
+					   <select name="instansi" class="form-control">
+					   	<option value="0"> Pilih Instansi (KLDI)</option>
+					   									<option value="D44">Kota Tangerang</option>
+													<option value="D450">Kota Tomohon</option>
+													<option value="D460">Kota Bitung</option>
+													<option value="D452">Kota Bitung</option>
+													<option value="D456">Kota Manado</option>
+													<option value="D434">Kota Kendari</option>
+													<option value="D46">Kota Serang</option>
+													<option value="D433">Provinsi Sulawesi Tenggara</option>
+													<option value="D462">Provinsi Sumatera Barat</option>
+													<option value="D446">Provinsi Sulawesi Utara</option>
+													<option value="D43">Provinsi Banten</option>
+													<option value="D436">Kota Bau-Bau</option>
+													<option value="D449">Kota Kotamobagu</option>
+													<option value="D453">Kabupaten Bolaang Mongondow</option>
+													<option value="D457">Kabupaten Talaud</option>
+													<option value="D458">Kabupaten Kepulauan Sangihe</option>
+													<option value="D427">Kabupaten Banggai</option>
+													<option value="D432">Kabupaten Banggai Kepulauan</option>
+													<option value="D454">Kabupaten Bolaang Mongondow Timur</option>
+													<option value="D455">Kabupaten Bolaang Mongondow Utara</option>
+													<option value="D441">Kabupaten Bombana</option>
+													<option value="D429">Kabupaten Buol</option>
+													<option value="D435">Kabupaten Buton</option>
+													<option value="D437">Kabupaten Buton Utara</option>
+													<option value="D447">Kabupaten Kepulauan Siau Tagulandang Biaro</option>
+													<option value="D444">Kabupaten Kolaka</option>
+													<option value="D442">Kabupaten Kolaka Utara</option>
+													<option value="D445">Kabupaten Konawe</option>
+													<option value="D438">Kabupaten Konawe Selatan</option>
+													<option value="D439">Kabupaten Konawe Utara</option>
+													<option value="D45">Kabupaten Lebak</option>
+													<option value="D459">Kabupaten Minahasa Selatan</option>
+													<option value="D451">Kabupaten Minahasa Tenggara</option>
+													<option value="D448">Kabupaten Minahasa Utara</option>
+													<option value="D426">Kabupaten Morowali</option>
+													<option value="D443">Kabupaten Muna</option>
+													<option value="D428">Kabupaten Poso</option>
+													<option value="D431">Kabupaten Sigi</option>
+													<option value="D430">Kabupaten Toli-Toli</option>
+													<option value="D440">Kabupaten Wakatobi</option>
+													<option value="D103">Kabupaten Cirebon</option>
+													<option value="D101">Kota Bogor</option>
+													<option value="D102">Kabupaten Bandung Barat</option>
+													<option value="D100">Kabupaten Majalengka</option>
+													<option value="I10">Universitas Tadulako</option>
+													<option value="I11">Universitas Islam Makassar</option>
+													<option value="I12">Universitas Wiralodra</option>
+													<option value="I13">Universitas Mataram</option>
+													<option value="I14">Universitas Muhammadiyah Makassar</option>
+													<option value="D188">Kota Probolinggo</option>
+													<option value="D187">Kota Kediri</option>
+													<option value="D191">Kota Pasuruan</option>
+													<option value="D200">Kota Singkawang</option>
+													<option value="D199">Kota Pontianak</option>
+													<option value="D214">Kota Banjarmasin</option>
+													<option value="D2">Kota Banda Aceh</option>
+													<option value="D20">Kota Subulussalam</option>
+													<option value="D212">Provinsi Kalimantan Selatan</option>
+													<option value="D197">Provinsi Kalimantan Barat</option>
+													<option value="D195">Kabupaten Bangkalan</option>
+													<option value="D213">Kabupaten Banjar</option>
+													<option value="D21">Kabupaten Bener Meriah</option>
+													<option value="D206">Kabupaten Bengkayang</option>
+													<option value="D190">Kabupaten Bondowoso</option>
+													<option value="D19">Kabupaten Gayo Lues</option>
+													<option value="D209">Kabupaten Kapuas Hulu</option>
+													<option value="D207">Kabupaten Kayong Utara</option>
+													<option value="D201">Kabupaten Ketapang</option>
+													<option value="D202">Kabupaten Kubu Raya</option>
+													<option value="D205">Kabupaten Landak</option>
+													<option value="D210">Kabupaten Melawi</option>
+													<option value="D193">Kabupaten Pamekasan</option>
+													<option value="D196">Kabupaten Ponorogo</option>
+													<option value="D203">Kabupaten Pontianak</option>
+													<option value="D208">Kabupaten Sambas</option>
+													<option value="D186">Kabupaten Sampang</option>
+													<option value="D204">Kabupaten Sanggau</option>
+													<option value="D198">Kabupaten Sekadau</option>
+													<option value="D211">Kabupaten Sintang</option>
+													<option value="D189">Kabupaten Tuban</option>
+													<option value="D194">Kabupaten Tulungagung</option>
+													<option value="I15">Universitas Bengkulu</option>
+													<option value="I16">Universitas Khairun</option>
+													<option value="I17">Universitas Gadjah Mada</option>
+													<option value="L18">Badan Pengembangan Wilayah Suramadu</option>
+													<option value="I18">Universitas Nusa Cendana Kupang</option>
+													<option value="I19">Universitas Diponegoro</option>
+													<option value="I20">Universitas AKI Semarang</option>
+													<option value="I21">Universitas Negeri Semarang</option>
+													<option value="I22">Universitas Stikubank</option>
+													<option value="I25">Universitas Sriwijaya</option>
+													<option value="I26">Universitas Hasanuddin</option>
+													<option value="I28">Universitas Sebelas Maret</option>
+													<option value="I29">Universitas Sumatera Utara</option>
+													<option value="D226">Provinsi Kalimantan Tengah</option>
+													<option value="D216">Kota Banjarbaru</option>
+													<option value="D225">Kabupaten Kotabaru</option>
+													<option value="D243">Kota Samarinda</option>
+													<option value="D245">Kota Tarakan</option>
+													<option value="D241">Provinsi Kalimantan Timur</option>
+													<option value="D244">Kabupaten Penajam Paser Utara</option>
+													<option value="I83">Universitas Airlangga</option>
+													<option value="D22">Kabupaten Aceh Selatan</option>
+													<option value="D23">Kabupaten Aceh Tenggara</option>
+													<option value="D24">Kabupaten Aceh Timur</option>
+													<option value="D215">Kabupaten Balangan</option>
+													<option value="D131">Kabupaten Banjarnegara</option>
+													<option value="D223">Kabupaten Barito Kuala</option>
+													<option value="D233">Kabupaten Barito Selatan</option>
+													<option value="D234">Kabupaten Barito Timur</option>
+													<option value="D232">Kabupaten Barito Utara</option>
+													<option value="D242">Kabupaten Berau</option>
+													<option value="D235">Kabupaten Gunung Mas</option>
+													<option value="D221">Kabupaten Hulu Sungai Selatan</option>
+													<option value="D224">Kabupaten Hulu Sungai Tengah</option>
+													<option value="D217">Kabupaten Hulu Sungai Utara</option>
+													<option value="D239">Kabupaten Kapuas</option>
+													<option value="D236">Kabupaten Katingan</option>
+													<option value="D228">Kabupaten Kotawaringin Barat</option>
+													<option value="D227">Kabupaten Kotawaringin Timur</option>
+													<option value="D229">Kabupaten Lamandau</option>
+													<option value="D240">Kabupaten Murung Raya</option>
+													<option value="D238">Kabupaten Pulang Pisau</option>
+													<option value="D230">Kabupaten Seruyan</option>
+													<option value="D237">Kabupaten Sukamara</option>
+													<option value="D219">Kabupaten Tabalong</option>
+													<option value="D222">Kabupaten Tanah Bumbu</option>
+													<option value="D218">Kabupaten Tanah Laut</option>
+													<option value="D220">Kabupaten Tapin</option>
+													<option value="I31">Universitas Pembangunan Panca Budi</option>
+													<option value="I32">Universitas HKBP Nommensen</option>
+													<option value="I33">Universitas Negeri Malang</option>
+													<option value="I35">Universitas Negeri Makassar</option>
+													<option value="I38">Universitas Islam Negeri Alauddin Makassar</option>
+													<option value="I39">Universitas Cokroaminoto Makassar</option>
+													<option value="I41">Universitas Muria Kudus</option>
+													<option value="I42">Universitas Wahid Hasyim</option>
+													<option value="I43">Universitas Tanjungpura</option>
+													<option value="I44">Universitas Lampung</option>
+													<option value="I46">Universitas Narotama</option>
+													<option value="I47">Universitas Mulawarman</option>
+													<option value="I48">Universitas Jember</option>
+													<option value="I49">Universitas Padjadjaran</option>
+													<option value="I50">Universitas Pendidikan Indonesia</option>
+													<option value="I51">Universitas Islam Negeri Sunan Gunung Djati Bandung</option>
+													<option value="I52">Universitas Pasundan</option>
+													<option value="I53">Universitas Maritim Raja Ali Haji</option>
+													<option value="I54">Universitas Putera Batam</option>
+													<option value="I55">Universitas Negeri Surabaya</option>
+													<option value="D499">Kabupaten Labuhan Batu</option>
+													<option value="I30">Universitas Negeri Medan</option>
+													<option value="I24">Universitas Negeri Manado</option>
+													<option value="D231">Kota Palangka Raya</option>
+													<option value="I56">Universitas Trunojoyo Madura</option>
+													<option value="I58">Universitas Jambi</option>
+													<option value="I59">Universitas Malikussaleh</option>
+													<option value="I60">Universitas Negeri Gorontalo</option>
+													<option value="I61">Universitas Haluoleo</option>
+													<option value="I62">Universitas Negeri Gorontalo</option>
+													<option value="I63">Universitas Muhammadiyah Parepare (UMPAR)</option>
+													<option value="I65">Universitas Islam Sultan Agung (UNISSULA)</option>
+													<option value="I66">Universitas Muhammadiyah Purwokerto</option>
+													<option value="I68">Universitas Riau</option>
+													<option value="I69">Universitas Surabaya</option>
+													<option value="D251">Kota Bontang</option>
+													<option value="D306">Kabupaten Apa</option>
+													<option value="D334">Provinsi Papua</option>
+													<option value="D34">Kabupaten Karangasem</option>
+													<option value="D336">Kabupaten Asmat</option>
+													<option value="D331">Kabupaten Flores Timur</option>
+													<option value="D337">Kabupaten Jayapura</option>
+													<option value="D338">Kabupaten Keerom</option>
+													<option value="D332">Kabupaten Lembata</option>
+													<option value="D339">Kabupaten Mappi</option>
+													<option value="D335">Kabupaten Merauke</option>
+													<option value="D333">Kabupaten Sabu Raijua</option>
+													<option value="D343">Kota Jayapura</option>
+													<option value="D344">Kabupaten Biak Numfor</option>
+													<option value="D345">Kabupaten Boven Digoel</option>
+													<option value="D346">Kabupaten Dogiyai</option>
+													<option value="D340">Kabupaten Mimika</option>
+													<option value="D341">Kabupaten Nabire</option>
+													<option value="D342">Kabupaten Puncak Jaya</option>
+													<option value="D534">Kabupaten Mahakam Ulu</option>
+													<option value="D107">Kabupaten Bandung</option>
+													<option value="D466">Kabupaten Dhamasraya</option>
+													<option value="D85">Kabupaten Batanghari</option>
+													<option value="D68">Kabupaten Bantul</option>
+													<option value="D483">Kabupaten Banyuasin</option>
+													<option value="D504">Kabupaten Batubara</option>
+													<option value="D56">Kabupaten Bengkulu Selatan</option>
+													<option value="D60">Kabupaten Bengkulu Tengah</option>
+													<option value="D10">Kabupaten Bireuen</option>
+													<option value="D79">Kabupaten Boalemo</option>
+													<option value="D77">Kabupaten Bone Bolango</option>
+													<option value="D94">Kabupaten Bungo</option>
+													<option value="D505">Kabupaten Dairi</option>
+													<option value="D506">Kabupaten Deli Serdang</option>
+													<option value="D491">Kabupaten Empat Lawang</option>
+													<option value="D81">Kabupaten Gorontalo</option>
+													<option value="D80">Kabupaten Gorontalo Utara</option>
+													<option value="D65">Kabupaten Gunung Kidul</option>
+													<option value="D526">Kabupaten Gunung Sitoli</option>
+													<option value="D507">Kabupaten Humbang Hasundutan</option>
+													<option value="D476">Kabupaten Lima Puluh Kota</option>
+													<option value="D96">Kabupaten Indramayu</option>
+													<option value="D98">Kabupaten Karawang</option>
+													<option value="D521">Kabupaten Karo</option>
+													<option value="D61">Kabupaten Kaur</option>
+													<option value="D58">Kabupaten Kepahiang</option>
+													<option value="D481">Kabupaten Kepulauan Mentawai</option>
+													<option value="D86">Kabupaten Kerinci</option>
+													<option value="D66">Kabupaten Kulon Progo</option>
+													<option value="D53">Kabupaten Bengkulu Utara</option>
+													<option value="D508">Kabupaten Labuhan Batu Selatan</option>
+													<option value="D525">Kabupaten Labuhan Batu Utara</option>
+													<option value="D497">Kabupaten Lahat</option>
+													<option value="D519">Kabupaten Langkat</option>
+													<option value="D54">Kabupaten Lebong</option>
+													<option value="D488">Kabupaten Musi Banyuasin</option>
+													<option value="D57">Kabupaten Muko-Muko</option>
+													<option value="D509">Kabupaten Mandailing Natal</option>
+													<option value="D461">Kabupaten Minahasa</option>
+													<option value="D485">Kabupaten Muara Enim</option>
+													<option value="D492">Kabupaten Musi Rawas</option>
+													<option value="D527">Kabupaten Nias</option>
+													<option value="D523">Kabupaten Nias Barat</option>
+													<option value="D510">Kabupaten Nias Selatan</option>
+													<option value="D528">Kabupaten Nias Utara</option>
+													<option value="D496">Kabupaten Ogan Ilir</option>
+													<option value="D489">Kabupaten Ogan Komering Ilir</option>
+													<option value="D495">Kabupaten Ogan Komering Ulu</option>
+													<option value="D493">Kabupaten Ogan Komering Ulu Selatan</option>
+													<option value="D494">Kabupaten Ogan Komering Ulu Timur</option>
+													<option value="D511">Kabupaten Padang Lawas</option>
+													<option value="D530">Kabupaten Padang Lawas Utara</option>
+													<option value="D473">Kabupaten Padang Pariaman</option>
+													<option value="D512">Kabupaten Pakpak Bharat</option>
+													<option value="D51">Kabupaten Pandeglang</option>
+													<option value="D467">Kabupaten Pasaman</option>
+													<option value="D477">Kabupaten Pasaman Barat</option>
+													<option value="D464">Kabupaten Pesisir Selatan</option>
+													<option value="D78">Kabupaten Pohuwato</option>
+													<option value="D59">Kabupaten Rejang Lebong</option>
+													<option value="D513">Kabupaten Samosir</option>
+													<option value="D84">Kabupaten Sarolangun</option>
+													<option value="D99">Kota Bandung</option>
+													<option value="D517">Kota Binjai</option>
+													<option value="D55">Kota Bengkulu</option>
+													<option value="D463">Kabupaten Sijunjung</option>
+													<option value="D62">Kabupaten Seluma</option>
+													<option value="D48">Kabupaten Serang</option>
+													<option value="D518">Kabupaten Serdang Bedagai</option>
+													<option value="D522">Kabupaten Simalungun</option>
+													<option value="D67">Kabupaten Sleman</option>
+													<option value="D475">Kabupaten Solok</option>
+													<option value="D478">Kabupaten Solok Selatan</option>
+													<option value="D535">Kabupaten Malaka</option>
+													<option value="D465">Kabupaten Tanah Datar</option>
+													<option value="D50">Kabupaten Tangerang</option>
+													<option value="D88">Kabupaten Tanjung Jabung Barat</option>
+													<option value="D93">Kabupaten Tanjung Jabung Timur</option>
+													<option value="D529">Kabupaten Tapanuli Selatan</option>
+													<option value="D524">Kabupaten Tapanuli Tengah</option>
+													<option value="D500">Kabupaten Tapanuli Utara</option>
+													<option value="D92">Kabupaten Tebo</option>
+													<option value="D7">Kota Sabang</option>
+													<option value="D64">Kota Yogyakarta</option>
+													<option value="D49">Kota Cilegon</option>
+													<option value="D501">Kota Tanjung Balai</option>
+													<option value="D531">Kota Sibolga</option>
+													<option value="D514">Kota Padang Sidempuan</option>
+													<option value="D516">Kota Tebing Tinggi</option>
+													<option value="D502">Kota Medan</option>
+													<option value="D471">Kota Padang</option>
+													<option value="D469">Kota Padang Panjang</option>
+													<option value="D480">Kota Pariaman</option>
+													<option value="D474">Kota Solok</option>
+													<option value="D479">Kota Bukit Tinggi</option>
+													<option value="D470">Kota Payakumbuh</option>
+													<option value="D487">Kota Prabumulih</option>
+													<option value="D486">Kota Palembang</option>
+													<option value="D484">Kota Pagar Alam</option>
+													<option value="D533">Provinsi Kalimantan Utara</option>
+													<option value="D47">Kota Tangerang Selatan</option>
+													<option value="D1">Provinsi Aceh</option>
+													<option value="D63">Provinsi D. I. Yogyakarta</option>
+													<option value="D468">Kota Sawahlunto</option>
+													<option value="D490">Kota Lubuklinggau</option>
+													<option value="D515">Kota Pematangsiantar</option>
+													<option value="D536">Kabupaten Pangandaran</option>
+													<option value="D537">Kabupaten Kolaka Timur</option>
+													<option value="D538">Kabupaten Konawe Kepulauan</option>
+													<option value="D104">Kota Sukabumi</option>
+													<option value="D112">Kota Cirebon</option>
+													<option value="D114">Kota Bekasi</option>
+													<option value="D111">Kota Cimahi</option>
+													<option value="D119">Kota Banjar</option>
+													<option value="D52">Provinsi Bengkulu</option>
+													<option value="D520">Kabupaten Toba Samosir</option>
+													<option value="D127">Kota Tegal</option>
+													<option value="L57">Badan Pengawas Pemilihan Umum</option>
+													<option value="D82">Kota Gorontalo</option>
+													<option value="K35">PT. PELNI (Persero)</option>
+													<option value="B3">PT. Pelabuhan Indonsia II</option>
+													<option value="D425">Kota Palu</option>
+													<option value="D113">Kota Tasikmalaya</option>
+													<option value="D152">Kota Magelang</option>
+													<option value="D147">Kota Surakarta</option>
+													<option value="D143">Kota Pekalongan</option>
+													<option value="D148">Kota Salatiga</option>
+													<option value="D129">Kota Semarang</option>
+													<option value="D14">Kota Langsa</option>
+													<option value="D122">Provinsi Jawa Tengah</option>
+													<option value="D180">Kota Malang</option>
+													<option value="D178">Kota Blitar</option>
+													<option value="D177">Kota Batu</option>
+													<option value="D181">Kota Surabaya</option>
+													<option value="D179">Kota Madiun</option>
+													<option value="D184">Kota Mojokerto</option>
+													<option value="D293">Kota Ternate</option>
+													<option value="D257">Kota Batam</option>
+													<option value="D310">Kota Bima</option>
+													<option value="D309">Kota Mataram</option>
+													<option value="D281">Kota Ambon</option>
+													<option value="D249">Kota Balikpapan</option>
+													<option value="D27">Kota Denpasar</option>
+													<option value="D3">Kota Lhokseumawe</option>
+													<option value="D266">Kota Metro</option>
+													<option value="D269">Kota Bandar Lampung</option>
+													<option value="D285">Kota Tual</option>
+													<option value="D312">Provinsi Nusa Tenggara Timur</option>
+													<option value="D25">Provinsi Bali</option>
+													<option value="D158">Provinsi Jawa Timur</option>
+													<option value="D301">Provinsi Nusa Tenggara Barat</option>
+													<option value="D291">Provinsi Maluku Utara</option>
+													<option value="D256">Provinsi Kepulauan Riau</option>
+													<option value="D279">Provinsi Maluku</option>
+													<option value="D264">Provinsi Lampung</option>
+													<option value="D402">Kota Palopo</option>
+													<option value="D482">Provinsi Sumatera Selatan</option>
+													<option value="N1">Kabupaten Dompu</option>
+													<option value="D254">Kabupaten Tana Tidung</option>
+													<option value="D300">Kota Tidore</option>
+													<option value="D259">Kota Tanjung Pinang</option>
+													<option value="D317">Kota Kupang</option>
+													<option value="D75">Kota Jakarta Utara</option>
+													<option value="D76">Provinsi Gorontalo</option>
+													<option value="D498">Provinsi Sumatera Utara</option>
+													<option value="D323">Kabupaten Rote Ndao</option>
+													<option value="D97">Kota Depok</option>
+													<option value="D38">Kota Pangkal Pinang</option>
+													<option value="D398">Kota Makassar</option>
+													<option value="D385">Kota Dumai</option>
+													<option value="D89">Kota Jambi</option>
+													<option value="D366">Kota Sorong</option>
+													<option value="D35">Provinsi Kepulauan Bangka Belitung</option>
+													<option value="D376">Provinsi Riau</option>
+													<option value="D95">Provinsi Jawa Barat</option>
+													<option value="D83">Provinsi Jambi</option>
+													<option value="D421">Provinsi Sulawesi Tengah</option>
+													<option value="D389">Provinsi Sulawesi Barat</option>
+													<option value="D357">Kabupaten Supriori</option>
+													<option value="D360">Kabupaten Yahukiomo</option>
+													<option value="D375">Kabupaten Teluk Wondamah</option>
+													<option value="D377">Kota Pekanbaru</option>
+													<option value="D394">Kabupaten Mamasa</option>
+													<option value="D403">Kota Parepare</option>
+													<option value="D405">Kabupaten Pangkajene & Kepulauan</option>
+													<option value="D412">Kabupaten Kepulauan Selayar</option>
+													<option value="D420">Kabupaten Ujung Pandang</option>
+													<option value="D422">Kabupaten Donggala</option>
+													<option value="D5">Kabupaten Aceh Barat</option>
+													<option value="D16">Kabupaten Aceh Barat Daya</option>
+													<option value="D8">Kabupaten Aceh Besar</option>
+													<option value="D9">Kabupaten Aceh Jaya</option>
+													<option value="D17">Kabupaten Aceh Singkil</option>
+													<option value="D18">Kabupaten Aceh Tamiang</option>
+													<option value="D6">Kabupaten Aceh Tengah</option>
+													<option value="D4">Kabupaten Aceh Utara</option>
+													<option value="D472">Kabupaten Agam</option>
+													<option value="D320">Kabupaten Alor</option>
+													<option value="D503">Kabupaten Asahan</option>
+													<option value="D26">Kabupaten Badung</option>
+													<option value="D36">Kabupaten Bangka</option>
+													<option value="D42">Kabupaten Bangka Barat</option>
+													<option value="D39">Kabupaten Bangka Selatan</option>
+													<option value="D37">Kabupaten Bangka Tengah</option>
+													<option value="D29">Kabupaten Bangli</option>
+													<option value="D404">Kabupaten Bantaeng</option>
+													<option value="D124">Kabupaten Banyumas</option>
+													<option value="D159">Kabupaten Banyuwangi</option>
+													<option value="D417">Kabupaten Barru</option>
+													<option value="D136">Kabupaten Batang</option>
+													<option value="D115">Kabupaten Bekasi</option>
+													<option value="D40">Kabupaten Belitung</option>
+													<option value="D41">Kabupaten Belitung Timur</option>
+													<option value="D316">Kabupaten Belu</option>
+													<option value="D381">Kabupaten Bengkalis</option>
+													<option value="D311">Kabupaten Bima</option>
+													<option value="D262">Kabupaten Bintan</option>
+													<option value="D169">Kabupaten Blitar</option>
+													<option value="D126">Kabupaten Blora</option>
+													<option value="D395">Provinsi Sulawesi Selatan</option>
+													<option value="D171">Kabupaten Bojonegoro</option>
+													<option value="D410">Kabupaten Bone</option>
+													<option value="D137">Kabupaten Boyolali</option>
+													<option value="D123">Kabupaten Brebes</option>
+													<option value="D30">Kabupaten Buleleng</option>
+													<option value="D411">Kabupaten Bulukumba</option>
+													<option value="D248">Kabupaten Bulungan</option>
+													<option value="D280">Kabupaten Buru</option>
+													<option value="D289">Kabupaten Buru Selatan</option>
+													<option value="D116">Kabupaten Ciamis</option>
+													<option value="D117">Kabupaten Cianjur</option>
+													<option value="D135">Kabupaten Cilacap</option>
+													<option value="D362">Kabupaten Deiyai</option>
+													<option value="D154">Kabupaten Demak</option>
+													<option value="D313">Kabupaten Ende</option>
+													<option value="D399">Kabupaten Enrekang</option>
+													<option value="D367">Kabupaten Fak-Fak</option>
+													<option value="D105">Kabupaten Garut</option>
+													<option value="D31">Kabupaten Gianyar</option>
+													<option value="D409">Kabupaten Gowa</option>
+													<option value="D168">Kabupaten Gresik</option>
+													<option value="D144">Kabupaten Grobogan</option>
+													<option value="D296">Kabupaten Halmahera Barat</option>
+													<option value="D295">Kabupaten Halmahera Selatan</option>
+													<option value="D294">Kabupaten Halmahera Tengah</option>
+													<option value="D297">Kabupaten Halmahera Timur</option>
+													<option value="D292">Kabupaten Halmahera Utara</option>
+													<option value="D379">Kabupaten Indragiri Hilir</option>
+													<option value="D388">Kabupaten Indragiri Hulu</option>
+													<option value="D363">Kabupaten Intan Jaya</option>
+													<option value="D347">Kabupaten Jayawijaya</option>
+													<option value="D172">Kabupaten Jember</option>
+													<option value="D28">Kabupaten Jembrana</option>
+													<option value="D418">Kabupaten Jeneponto</option>
+													<option value="D134">Kabupaten Jepara</option>
+													<option value="D164">Kabupaten Jombang</option>
+													<option value="D368">Kabupaten Kaimana</option>
+													<option value="D380">Kabupaten Kampar</option>
+													<option value="D125">Kabupaten Karanganyar</option>
+													<option value="D258">Kabupaten Karimun</option>
+													<option value="D128">Kabupaten Kebumen</option>
+													<option value="D173">Kabupaten Kediri</option>
+													<option value="D155">Kabupaten Kendal</option>
+													<option value="D263">Kabupaten Kepulauan Anambas</option>
+													<option value="D288">Kabupaten Kepulauan Aru</option>
+													<option value="D298">Kabupaten Kepulauan Sula</option>
+													<option value="D348">Kabupaten Kepulauan Yapen</option>
+													<option value="D141">Kabupaten Klaten</option>
+													<option value="D32">Kabupaten Klungkung</option>
+													<option value="D378">Kabupaten Kuantan Singingi</option>
+													<option value="D145">Kabupaten Kudus</option>
+													<option value="D106">Kabupaten Kuningan</option>
+													<option value="D322">Kabupaten Kupang</option>
+													<option value="D255">Kabupaten Kutai Barat</option>
+													<option value="D252">Kabupaten Kutai Timur</option>
+													<option value="D174">Kabupaten Lamongan</option>
+													<option value="D270">Kabupaten Lampung Barat</option>
+													<option value="D267">Kabupaten Lampung Selatan</option>
+													<option value="D273">Kabupaten Lampung Tengah</option>
+													<option value="D268">Kabupaten Lampung Timur</option>
+													<option value="D271">Kabupaten Lampung Utara</option>
+													<option value="D349">Kabupaten Lanny Jaya</option>
+													<option value="D261">Kabupaten Lingga</option>
+													<option value="D307">Kabupaten Lombok Barat</option>
+													<option value="D304">Kabupaten Lombok Tengah</option>
+													<option value="D305">Kabupaten Lombok Timur</option>
+													<option value="D308">Kabupaten Lombok Utara</option>
+													<option value="D183">Kabupaten Lumajang</option>
+													<option value="D407">Kabupaten Luwu</option>
+													<option value="D408">Kabupaten Luwu Timur</option>
+													<option value="D396">Kabupaten Luwu Utara</option>
+													<option value="D161">Kabupaten Madiun</option>
+													<option value="D146">Kabupaten Magelang</option>
+													<option value="D165">Kabupaten Magetan</option>
+													<option value="D392">Kabupaten Majene</option>
+													<option value="D166">Kabupaten Malang</option>
+													<option value="D253">Kabupaten Malinau</option>
+													<option value="D290">Kabupaten Maluku Barat Daya</option>
+													<option value="D287">Kabupaten Maluku Tengah</option>
+													<option value="D282">Kabupaten Maluku Tenggara</option>
+													<option value="D284">Kabupaten Maluku Tenggara Barat</option>
+													<option value="D299">Kabupaten Maluku Utara</option>
+													<option value="D350">Kabupaten Mamberamo Raya</option>
+													<option value="D351">Kabupaten Mamberamo Tengah</option>
+													<option value="D108">Kabupaten Bogor</option>
+													<option value="D390">Kabupaten Mamuju</option>
+													<option value="D393">Kabupaten Mamuju Utara</option>
+													<option value="D319">Kabupaten Manggarai</option>
+													<option value="D321">Kabupaten Manggarai Barat</option>
+													<option value="D327">Kabupaten Manggarai Timur</option>
+													<option value="D397">Kabupaten Maros</option>
+													<option value="D374">Kabupaten Maybrat</option>
+													<option value="D90">Kabupaten Merangin</option>
+													<option value="D386">Kabupaten Meranti</option>
+													<option value="D276">Kabupaten Mesuji</option>
+													<option value="D170">Kabupaten Mojokerto</option>
+													<option value="D87">Kabupaten Muaro Jambi</option>
+													<option value="D11">Kabupaten Nagan Raya</option>
+													<option value="D326">Kabupaten Nagekeo</option>
+													<option value="D260">Kabupaten Natuna</option>
+													<option value="D352">Kabupaten Nduga Tengah</option>
+													<option value="D325">Kabupaten Ngada</option>
+													<option value="D167">Kabupaten Nganjuk</option>
+													<option value="D175">Kabupaten Ngawi</option>
+													<option value="D250">Kabupaten Nunukan</option>
+													<option value="D163">Kabupaten Pacitan</option>
+													<option value="D353">Kabupaten Paniai</option>
+													<option value="D423">Kabupaten Parigi Moutong</option>
+													<option value="D185">Kabupaten Pasuruan</option>
+													<option value="D156">Kabupaten Pati</option>
+													<option value="D354">Kabupaten Pegunungan Bintang</option>
+													<option value="D132">Kabupaten Pekalongan</option>
+													<option value="D382">Kabupaten Pelalawan</option>
+													<option value="D133">Kabupaten Pemalang</option>
+													<option value="D265">Kabupaten Pesawaran</option>
+													<option value="D12">Kabupaten Pidie</option>
+													<option value="D13">Kabupaten Pidie Jaya</option>
+													<option value="D400">Kabupaten Pinrang</option>
+													<option value="D391">Kabupaten Polewali Mandar</option>
+													<option value="D278">Kabupaten Pringsewu</option>
+													<option value="D182">Kabupaten Probolinggo</option>
+													<option value="D355">Kabupaten Puncak</option>
+													<option value="D149">Kabupaten Purbalingga</option>
+													<option value="D109">Kabupaten Purwakarta</option>
+													<option value="D130">Kabupaten Purworejo</option>
+													<option value="D369">Kabupaten Raja Ampat</option>
+													<option value="D157">Kabupaten Rembang</option>
+													<option value="D387">Kabupaten Rokan Hilir</option>
+													<option value="D383">Kabupaten Rokan Hulu</option>
+													<option value="D356">Kabupaten Sarmi</option>
+													<option value="D138">Kabupaten Semarang</option>
+													<option value="D283">Kabupaten Seram Bagian Barat</option>
+													<option value="D286">Kabupaten Seram Bagian Timur</option>
+													<option value="D384">Kabupaten Siak</option>
+													<option value="D406">Kabupaten Sidenreng Rappang</option>
+													<option value="D160">Kabupaten Sidoarjo</option>
+													<option value="D328">Kabupaten Sikka</option>
+													<option value="D401">Kabupaten Sinjai</option>
+													<option value="D176">Kabupaten Situbondo</option>
+													<option value="D414">Kabupaten Soppeng</option>
+													<option value="D370">Kabupaten Sorong</option>
+													<option value="D371">Kabupaten Sorong Selatan</option>
+													<option value="D139">Kabupaten Sragen</option>
+													<option value="D120">Kabupaten Subang</option>
+													<option value="D121">Kabupaten Sukabumi</option>
+													<option value="D150">Kabupaten Sukoharjo</option>
+													<option value="D314">Kabupaten Sumba Barat</option>
+													<option value="D315">Kabupaten Sumba Barat Daya</option>
+													<option value="D329">Kabupaten Sumba Tengah</option>
+													<option value="D330">Kabupaten Sumba Timur</option>
+													<option value="D303">Kabupaten Sumbawa</option>
+													<option value="D302">Kabupaten Sumbawa Barat</option>
+													<option value="D118">Kabupaten Sumedang</option>
+													<option value="D162">Kabupaten Sumenep</option>
+													<option value="D33">Kabupaten Tabanan</option>
+													<option value="D413">Kabupaten Takalar</option>
+													<option value="D373">Kabupaten Tambrauw</option>
+													<option value="D419">Kabupaten Tana Toraja</option>
+													<option value="D277">Kabupaten Tanggamus</option>
+													<option value="D110">Kabupaten Tasikmalaya</option>
+													<option value="D142">Kabupaten Tegal</option>
+													<option value="D372">Kabupaten Teluk Bintuni</option>
+													<option value="D140">Kabupaten Temanggung</option>
+													<option value="D324">Kabupaten Timor Tengah Selatan</option>
+													<option value="D318">Kabupaten Timor Tengah Utara</option>
+													<option value="D424">Kabupaten Tojo Una-Una</option>
+													<option value="D358">Kabupaten Tolikara</option>
+													<option value="D416">Kabupaten Toraja Utara</option>
+													<option value="D275">Kabupaten Tulang Bawang</option>
+													<option value="D274">Kabupaten Tulang Bawang Barat</option>
+													<option value="D415">Kabupaten Wajo</option>
+													<option value="D359">Kabupaten Waropen</option>
+													<option value="D272">Kabupaten Way Kanan</option>
+													<option value="D153">Kabupaten Wonogiri</option>
+													<option value="D151">Kabupaten Wonosobo</option>
+													<option value="D361">Kabupaten Yalimo</option>
+													<option value="D91">Kota Sungai Penuh</option>
+													<option value="L54">Badan Pengembangan Wilayah Suramadu (BPWS)</option>
+													<option value="B4">PT. KBN (Persero)</option>
+													<option value="D192">Kabupaten Trenggalek</option>
+													<option value="D246">Kabupaten Kutai Kartanegara</option>
+													<option value="D15">Kabupaten Simeuleu</option>
+													<option value="D247">Kabupaten Paser</option>
+													<option value="D364">Provinsi Papua Barat</option>
+													<option value="L53">Lembaga Perlindungan Saksi dan Korban</option>
+													<option value="K26">Kementerian Perhubungan</option>
+													<option value="K24">Kementerian Perdagangan</option>
+													<option value="K22">Kementerian Pendayagunaan Aparatur Negara Dan Reformasi Birokrasi</option>
+													<option value="K23">Kementerian Pendidikan dan Kebudayaan</option>
+													<option value="K19">Kementerian Pembangunan Daerah Tertinggal</option>
+													<option value="K1">Kementerian Agama</option>
+													<option value="K28">Kementerian Pertahanan</option>
+													<option value="K31">Kementerian Riset Dan Teknologi</option>
+													<option value="K30">Kementerian Perumahan Rakyat</option>
+													<option value="K33">Kementerian Sosial</option>
+													<option value="B2">Perusahaan Umum Damri</option>
+													<option value="L50">Badan Pengawas Pasar Modal Dan Lembaga Keuangan</option>
+													<option value="K17">Kementerian Luar Negeri</option>
+													<option value="L55">Komisi Hukum Nasional</option>
+													<option value="B5">Perum Damri</option>
+													<option value="K18">Kementerian Pekerjaan Umum</option>
+													<option value="D72">Kota Jakarta Pusat</option>
+													<option value="L21">Badan Pusat Statistik</option>
+													<option value="L22">Badan Sar Nasional</option>
+													<option value="L15">Badan Pengawas Obat Dan Makanan</option>
+													<option value="L41">Mahkamah Konstitusi Ri</option>
+													<option value="L28">Dewan Perwakilan Rakyat</option>
+													<option value="L42">Majelis Permusyawaratan Rakyat</option>
+													<option value="L19">Badan Pengkajian Dan Penerapan Teknologi</option>
+													<option value="K9">Kementerian Kesehatan</option>
+													<option value="K10">Kementerian Keuangan</option>
+													<option value="K7">Kementerian Kehutanan</option>
+													<option value="K3">Kementerian Dalam Negeri</option>
+													<option value="K8">Kementerian Kelautan Dan Perikanan</option>
+													<option value="K6">Kementerian Pariwisata dan Ekonomi Kreatif</option>
+													<option value="K4">Kementerian Energi Dan Sumber Daya Mineral</option>
+													<option value="D69">Provinsi DKI Jakarta</option>
+													<option value="K20">Kementerian Pemberdayaan Perempuan Dan Perlindungan Anak</option>
+													<option value="K21">Kementerian Pemuda Dan Olah Raga</option>
+													<option value="K25">Kementerian Perencanaan Pembangunan Nasional</option>
+													<option value="K16">Kementerian Lingkungan Hidup</option>
+													<option value="K2">Kementerian Badan Usaha Milik Negara</option>
+													<option value="L3">Badan Kepegawaian Negara</option>
+													<option value="L7">Badan Meteorologi, Klimatologi Dan Geofisika</option>
+													<option value="L9">Badan Nasional Penanggulangan Bencana</option>
+													<option value="L10">Badan Nasional Penanggulangan Terorisme</option>
+													<option value="L12">Badan Nasional Pengelola Perbatasan</option>
+													<option value="L13">Badan Pemeriksa Keuangan</option>
+													<option value="L14">Badan Penanggulangan Lumpur Sidoarjo (Bpls)</option>
+													<option value="K11">Kementerian Komunikasi Dan Informatika</option>
+													<option value="K12">Kementerian Koordinator Bidang Kesejahteraan Rakyat</option>
+													<option value="K13">Kementerian Koordinator Bidang Perekonomian</option>
+													<option value="K14">Kementerian Koordinator Bidang Politik, Hukum Dan Keamanan</option>
+													<option value="L16">Badan Pengawas Tenaga Nuklir</option>
+													<option value="L17">Badan Pengawasan Keuangan Dan Pembangunan</option>
+													<option value="L31">Komisi Pemilihan Umum</option>
+													<option value="L23">Badan Standarisasi Nasional</option>
+													<option value="L24">Badan Tenaga Nuklir Nasional</option>
+													<option value="L25">Bendahara Umum Negara</option>
+													<option value="L26">Dewan Ketahanan Nasional</option>
+													<option value="L27">Dewan Perwakilan Daerah (Dpd)</option>
+													<option value="L29">Komisi Nasional Hak Asasi Manusia</option>
+													<option value="L30">Komisi Pemberantasan Korupsi</option>
+													<option value="L32">Komisi Pengawas Persaingan Usaha</option>
+													<option value="L33">Komisi Yudisial Ri</option>
+													<option value="L34">Lembaga Administrasi Negara</option>
+													<option value="L36">Lembaga Kebijakan Pengadaan Barang/Jasa Pemerintah</option>
+													<option value="L37">Lembaga Ketahanan Nasional</option>
+													<option value="L38">Lembaga Penerbangan Dan Antariksa Nasional</option>
+													<option value="L39">Lembaga Sandi Negara</option>
+													<option value="L40">Mahkamah Agung</option>
+													<option value="L43">Ombudsman Republik Indonesia</option>
+													<option value="L44">Perpustakaan Nasional Republik Indonesia</option>
+													<option value="L45">Pusat Pelaporan Dan Analisis Transaksi Keuangan</option>
+													<option value="L46">Kejaksaan Republik Indonesia</option>
+													<option value="L47">Kepolisian Negara Republik Indonesia</option>
+													<option value="L48">Tentara Nasional Republik Indonesia</option>
+													<option value="L49">Unit Kerja Presiden Bidang Pengawasan Dan Pengendalian Pembangunan</option>
+													<option value="D70">Kabupaten Adm. Kepulauan S</option>
+													<option value="ZONK">Instansi Belum Dipetakan</option>
+													<option value="I34">Universitas Indonesia</option>
+													<option value="K27">Kementerian Perindustrian</option>
+													<option value="K29">Kementerian Pertanian</option>
+													<option value="K34">Kementerian Tenaga Kerja Dan Transmigrasi</option>
+													<option value="D71">Kota Jakarta Selatan</option>
+													<option value="B1">PT. Perusahaan Llistrik Negara (PLN)</option>
+													<option value="K15">Kementerian Koperasi Dan Pengusaha Kecil Dan Menengah</option>
+													<option value="L5">Badan Koordinasi Penanaman Modal</option>
+													<option value="L20">Badan Pertanahan Nasional</option>
+													<option value="L11">Badan Nasional Penempatan Dan Perlindungan Tenaga Kerja Indonesia</option>
+													<option value="K5">Kementerian Hukum Dan Hak Asasi Manusia Ri</option>
+													<option value="L35">Lembaga Ilmu Pengetahuan Indonesia</option>
+													<option value="L2">Badan Intelijen Negara</option>
+													<option value="L1">Arsip Nasional Republik Indonesia</option>
+													<option value="D74">Kota Jakarta Timur</option>
+													<option value="D73">Kota Jakarta Barat</option>
+													<option value="L8">Badan Narkotika Nasional</option>
+													<option value="L6">Badan Koordinasi Survei Dan Pemetaan Nasional</option>
+													<option value="L4">Badan Kependudukan Dan Keluarga Berencana Nasional</option>
+													<option value="I71">STAIN Jember</option>
+													<option value="K36">Universitas Jendral Soedirman</option>
+													<option value="I70">Politeknik Negeri Lampung</option>
+													<option value="I72">Universitas Negeri Padang</option>
+													<option value="K37">Politeknik Negeri Ujung Pandang</option>
+													<option value="I73">Politeknik Negeri Sriwijaya</option>
+													<option value="I74">IAIN Raden Intan Lampung</option>
+													<option value="I75">Mahkamah Syar'iyah Aceh</option>
+													<option value="I76">Politeknik Negeri Malang</option>
+													<option value="I77">Sekolah Tinggi Pariwisata Nusa Dua Bali</option>
+													<option value="I78">Universitas Syiah Kuala Banda Aceh</option>
+													<option value="I79">Universitas Malikussaleh</option>
+													<option value="I80">Universitas Palangka Raya</option>
+													<option value="I82">Universitas Sam Ratulangi</option>
+													<option value="D365">Kabupaten Manokwari</option>
+													<option value="I81">Badan Pengusahaan Batam</option>
+													<option value="D539">Kabupaten Pesisir Barat</option>
+													<option value="D540">Kabupaten Musi Rawas Utara</option>
+													<option value="D541">Kabupaten Morowali Utara</option>
+													<option value="L56">Lembaga Sekretariat Kabinet</option>
+													<option value="I84">Badan Pengusahaan Sabang</option>
+													<option value="L52">Lembaga Penyiaran Radio Republik Indonesia</option>
+													<option value="K32">Kementerian Sekretariat Negara</option>
+													<option value="L51">Lembaga Penyiaran Televisi Republik Indonesia</option>
+													<option value="D542">Kabupaten Bolaang Mongondow Selatan</option>
+													<option value="D543">Kabupaten Mamuju Tengah</option>
+													<option value="D544">Kabupaten Penukal Abab Lematang Ilir</option>
+													<option value="D545">Kabupaten Manokwari Selatan</option>
+													<option value="D546">Kabupaten Arfak</option>
+													<option value="D547">Kabupaten Banggai Laut</option>
+													<option value="D548">Kabupaten Pulau Taliabu</option>
+													<option value="B6">PD PAL Jaya</option>
+											   </select>
+				   </div>
+				   <div class="slct-srch-detail">
+					   <select name="kgr_id" class="form-control">
+							<option value="null">Pilih Kategori</option>
+																					<option value="0" >Pengadaan Barang</option>
+																					<option value="1" >Jasa Konsultansi Badan Usaha</option>
+																					<option value="2" >Pekerjaan Konstruksi</option>
+																					<option value="3" >Jasa Lainnya</option>
+																					<option value="4" >Jasa Konsultansi Perorangan</option>
+												   </select>
+				   </div>
+				   <div class="slct-srch-detail">
+					   <select name="pkt_hps" class="form-control">
+							<option value="null">Pilih Nilai HPS</option>
+																					<option value="less500"  > < 500jt</option>
+																					<option value="5001M"  > 500jt - 1M </option>
+																					<option value="more1M"  > > 1M</option>
+													
+					   </select>
+				   </div>
+				   <div class="slct-srch-detail no-margin">
+					   <select name="kls_id" class="form-control">
+					   	<option value="null"> Pilih Kualifikasi</option>
+					   						   								<option value="21" >Perusahaan Kecil</option>
+											   								<option value="22" >Perusahaan Non Kecil</option>
+											   								<option value="23" >Perusahaan Kecil dan Non Kecil</option>
+											   </select>
+				   </div>
+				   
+				   <div class="clearfix"></div>
+				   
+				   <div class="kunci-pencarian">
+						<div class="slct-srch-detail"> 
+							<h4>Kata Kunci</h4>
+						</div>
+						<div class="slct-srch-detail"> 
+							<input type="text" class="form-control" name="pkt_nama" placeholder="Nama" value="">
+						</div>
+						<div class="slct-srch-detail"> 
+							<input type="text" class="form-control" name="satuan_kerja" placeholder="Satuan Kerja" value="">
+						</div>
+						<div class="slct-srch-detail"> 
+														<input type="text" class="form-control" name="lpse_id" id="autoLPSE" placeholder="LPSE" value="">
+						</div>
+						<div class="slct-srch-detail no-margin">
+							<button type="submit" class="btn bg-2 col-xs-12"><span class="glyphicon glyphicon-search"></span>&nbsp;Cari</button>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="clearfix"></div>
+			<div class="line-clear"></div>
+		</div>
+	</div>
+</section>
+
+
+	
+<section id="pengadaan_box">
+        <div class="w-section inverse">
+            <div class="container">
+                <div class="row">
+
+                						<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="w-box product">
+							<div class="box-lpse-bt">
+								<div class="col-md-4 box-img">
+									
+										
+
+									<img alt="" src="http://dataclient.net/lkpp-lpse/uploads/kota-yogyakarta1.png" class="img-responsive img-center">
+								</div>
+								<h5>LPSE Kota Yogyakarta</h5>
+								<h3>Nilai HPS : </h3>
+								<h4>Rp 497,750,470</h4>
+							</div>
+							<p >
+								Belanja Premi Asuransi Barang Milik&#8230;							</p>
+							<br/>
+							<p>
+								Pengumuman Lelang : 09 Desember 2014</P>
+							
+							<div class="w-footer">
+								<a href="http://localhost/inaproc/pengadaan/detail/2174021/1748021/2014-12-09%2008%3A00%3A00" class="btn btn-detail">Detail</a>
+								
+								<img src=http://localhost/inaproc/images/icon/lainnya.png>								<span class="price">Dilihat : 0</span>
+							</div>
+						</div>
+					</div>
+										<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="w-box product">
+							<div class="box-lpse-bt">
+								<div class="col-md-4 box-img">
+									
+										
+
+									<img alt="" src="http://dataclient.net/lkpp-lpse/uploads/kota-yogyakarta1.png" class="img-responsive img-center">
+								</div>
+								<h5>LPSE Kota Yogyakarta</h5>
+								<h3>Nilai HPS : </h3>
+								<h4>Rp 299,802,917</h4>
+							</div>
+							<p >
+								Belanja Premi Asuransi Barang Milik&#8230;							</p>
+							<br/>
+							<p>
+								Pengumuman Lelang : 09 Desember 2014</P>
+							
+							<div class="w-footer">
+								<a href="http://localhost/inaproc/pengadaan/detail/2172021/1746021/2014-12-09%2008%3A00%3A00" class="btn btn-detail">Detail</a>
+								
+								<img src=http://localhost/inaproc/images/icon/lainnya.png>								<span class="price">Dilihat : 0</span>
+							</div>
+						</div>
+					</div>
+										<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="w-box product">
+							<div class="box-lpse-bt">
+								<div class="col-md-4 box-img">
+									
+										
+
+									<img alt="" src="http://dataclient.net/lkpp-lpse/uploads/kota-yogyakarta1.png" class="img-responsive img-center">
+								</div>
+								<h5>LPSE Kota Yogyakarta</h5>
+								<h3>Nilai HPS : </h3>
+								<h4>Rp 299,602,533</h4>
+							</div>
+							<p >
+								Belanja Premi Asuransi Barang Milik&#8230;							</p>
+							<br/>
+							<p>
+								Pengumuman Lelang : 09 Desember 2014</P>
+							
+							<div class="w-footer">
+								<a href="http://localhost/inaproc/pengadaan/detail/2173021/1747021/2014-12-09%2008%3A00%3A00" class="btn btn-detail">Detail</a>
+								
+								<img src=http://localhost/inaproc/images/icon/lainnya.png>								<span class="price">Dilihat : 0</span>
+							</div>
+						</div>
+					</div>
+										<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="w-box product">
+							<div class="box-lpse-bt">
+								<div class="col-md-4 box-img">
+									
+										
+
+									<img alt="" src="http://dataclient.net/lkpp-lpse/uploads/kota-yogyakarta1.png" class="img-responsive img-center">
+								</div>
+								<h5>LPSE Kota Yogyakarta</h5>
+								<h3>Nilai HPS : </h3>
+								<h4>Rp 408,834,000</h4>
+							</div>
+							<p >
+								Pengadaan Meubelair Asrama Pusdiklat Kemendagri&#8230;							</p>
+							<br/>
+							<p>
+								Pengumuman Lelang : 05 Desember 2014</P>
+							
+							<div class="w-footer">
+								<a href="http://localhost/inaproc/pengadaan/detail/2170021/1739021/2014-12-05%2015%3A31%3A00" class="btn btn-detail">Detail</a>
+								
+								<img src=http://localhost/inaproc/images/icon/pengadaanbarang.png>								<span class="price">Dilihat : 0</span>
+							</div>
+						</div>
+					</div>
+										<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="w-box product">
+							<div class="box-lpse-bt">
+								<div class="col-md-4 box-img">
+									
+										
+
+									<img alt="" src="http://dataclient.net/lkpp-lpse/uploads/kota-yogyakarta1.png" class="img-responsive img-center">
+								</div>
+								<h5>LPSE Kota Yogyakarta</h5>
+								<h3>Nilai HPS : </h3>
+								<h4>Rp 331,237,000</h4>
+							</div>
+							<p >
+								Belanja Pakaian Kerja Lapangan							</p>
+							<br/>
+							<p>
+								Pengumuman Lelang : 05 Desember 2014</P>
+							
+							<div class="w-footer">
+								<a href="http://localhost/inaproc/pengadaan/detail/2148021/1738021/2014-12-05%2008%3A00%3A00" class="btn btn-detail">Detail</a>
+								
+								<img src=http://localhost/inaproc/images/icon/pengadaanbarang.png>								<span class="price">Dilihat : 0</span>
+							</div>
+						</div>
+					</div>
+										<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="w-box product">
+							<div class="box-lpse-bt">
+								<div class="col-md-4 box-img">
+									
+										
+
+									<img alt="" src="http://dataclient.net/lkpp-lpse/uploads/kota-yogyakarta1.png" class="img-responsive img-center">
+								</div>
+								<h5>LPSE Kota Yogyakarta</h5>
+								<h3>Nilai HPS : </h3>
+								<h4>Rp 552,428,400</h4>
+							</div>
+							<p >
+								Pengadaan Investasi  Alat   Medis :&#8230;							</p>
+							<br/>
+							<p>
+								Pengumuman Lelang : 27 Nopember 2014</P>
+							
+							<div class="w-footer">
+								<a href="http://localhost/inaproc/pengadaan/detail/2166021/1745021/2014-11-27%2008%3A00%3A00" class="btn btn-detail">Detail</a>
+								
+								<img src=http://localhost/inaproc/images/icon/pengadaanbarang.png>								<span class="price">Dilihat : 0</span>
+							</div>
+						</div>
+					</div>
+										<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="w-box product">
+							<div class="box-lpse-bt">
+								<div class="col-md-4 box-img">
+									
+										
+
+									<img alt="" src="http://dataclient.net/lkpp-lpse/uploads/kota-yogyakarta1.png" class="img-responsive img-center">
+								</div>
+								<h5>LPSE Kota Yogyakarta</h5>
+								<h3>Nilai HPS : </h3>
+								<h4>Rp 276,100,000</h4>
+							</div>
+							<p >
+								PENGADAAN PERALATAN UKUR INSTRUMENTASI DAN&#8230;							</p>
+							<br/>
+							<p>
+								Pengumuman Lelang : 27 Nopember 2014</P>
+							
+							<div class="w-footer">
+								<a href="http://localhost/inaproc/pengadaan/detail/2131021/1637021/2014-11-27%2008%3A00%3A00" class="btn btn-detail">Detail</a>
+								
+								<img src=http://localhost/inaproc/images/icon/pengadaanbarang.png>								<span class="price">Dilihat : 1</span>
+							</div>
+						</div>
+					</div>
+										<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="w-box product">
+							<div class="box-lpse-bt">
+								<div class="col-md-4 box-img">
+									
+										
+
+									<img alt="" src="http://dataclient.net/lkpp-lpse/uploads/kota-yogyakarta1.png" class="img-responsive img-center">
+								</div>
+								<h5>LPSE Kota Yogyakarta</h5>
+								<h3>Nilai HPS : </h3>
+								<h4>Rp 322,300,000</h4>
+							</div>
+							<p >
+								PENGADAAN PERALATAN LABORATORIUM ELEKTRO DAN&#8230;							</p>
+							<br/>
+							<p>
+								Pengumuman Lelang : 27 Nopember 2014</P>
+							
+							<div class="w-footer">
+								<a href="http://localhost/inaproc/pengadaan/detail/2128021/1638021/2014-11-27%2008%3A00%3A00" class="btn btn-detail">Detail</a>
+								
+								<img src=http://localhost/inaproc/images/icon/pengadaanbarang.png>								<span class="price">Dilihat : 0</span>
+							</div>
+						</div>
+					</div>
+										<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="w-box product">
+							<div class="box-lpse-bt">
+								<div class="col-md-4 box-img">
+									
+										
+
+									<img alt="" src="http://dataclient.net/lkpp-lpse/uploads/kota-yogyakarta1.png" class="img-responsive img-center">
+								</div>
+								<h5>LPSE Kota Yogyakarta</h5>
+								<h3>Nilai HPS : </h3>
+								<h4>Rp 582,889,700</h4>
+							</div>
+							<p >
+								Pembelian Alat dan Bahan Laboratorium							</p>
+							<br/>
+							<p>
+								Pengumuman Lelang : 26 Nopember 2014</P>
+							
+							<div class="w-footer">
+								<a href="http://localhost/inaproc/pengadaan/detail/2163021/1735021/2014-11-26%2008%3A00%3A00" class="btn btn-detail">Detail</a>
+								
+								<img src=http://localhost/inaproc/images/icon/pengadaanbarang.png>								<span class="price">Dilihat : 0</span>
+							</div>
+						</div>
+					</div>
+									</div>
+			</div>
+        </div>
+    </div>    
+</section>
+
+<section id="pengadaan_list" style="display:none">
+	<div class="w-section inverse">
+		<div class="container">
+			<div class="row no-margin">
+				
+								<div class="col-md-12 col-sm-12 col-xs-12 box-lpse-list">
+					
+					<div class="col-md-4 col-sm-4 col-xs-12 no-padding" >
+												<div class="col-md-4 col-sm-4 col-xs-12 mb-10" >
+							
+
+									<img alt="" src="http://dataclient.net/lkpp-lpse/uploads/kota-yogyakarta1.png" class="img-responsive img-center">
+						</div>
+						<div class="col-md-8 col-sm-8 col-xs-12 mb-20">
+							<h5>LPSE Kota Yogyakarta</h5>
+							<h4>Nilai HPS : </h4>
+							<h3>Rp 497,750,470</h3>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12 mb-20">
+						<a href="http://localhost/inaproc/pengadaan/detail/2174021/1748021/2014-12-09%2008%3A00%3A00">Belanja Premi Asuransi Barang Milik Daerah (Premi Asuransi Bangunan Gedung/Bangunan Perekonomian)</a>
+						<br/>
+					</div>
+						
+					<div class="w-footer col-md-4 col-sm-4 col-xs-12 text-center">
+						<p>Pengumuman Lelang : 09 Desember 2014</P>
+						<span class="price">Dilihat :  0</span>
+						<a href="http://localhost/inaproc/pengadaan/detail/2174021/1748021/2014-12-09%2008%3A00%3A00" class="btn btn-detail">Detail</a> <img src=http://localhost/inaproc/images/icon/lainnya.png>					</div>
+				</div>
+								<div class="col-md-12 col-sm-12 col-xs-12 box-lpse-list">
+					
+					<div class="col-md-4 col-sm-4 col-xs-12 no-padding" >
+												<div class="col-md-4 col-sm-4 col-xs-12 mb-10" >
+							
+
+									<img alt="" src="http://dataclient.net/lkpp-lpse/uploads/kota-yogyakarta1.png" class="img-responsive img-center">
+						</div>
+						<div class="col-md-8 col-sm-8 col-xs-12 mb-20">
+							<h5>LPSE Kota Yogyakarta</h5>
+							<h4>Nilai HPS : </h4>
+							<h3>Rp 299,802,917</h3>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12 mb-20">
+						<a href="http://localhost/inaproc/pengadaan/detail/2172021/1746021/2014-12-09%2008%3A00%3A00">Belanja Premi Asuransi Barang Milik Daerah (Premi Kendaraan)</a>
+						<br/>
+					</div>
+						
+					<div class="w-footer col-md-4 col-sm-4 col-xs-12 text-center">
+						<p>Pengumuman Lelang : 09 Desember 2014</P>
+						<span class="price">Dilihat :  0</span>
+						<a href="http://localhost/inaproc/pengadaan/detail/2172021/1746021/2014-12-09%2008%3A00%3A00" class="btn btn-detail">Detail</a> <img src=http://localhost/inaproc/images/icon/lainnya.png>					</div>
+				</div>
+								<div class="col-md-12 col-sm-12 col-xs-12 box-lpse-list">
+					
+					<div class="col-md-4 col-sm-4 col-xs-12 no-padding" >
+												<div class="col-md-4 col-sm-4 col-xs-12 mb-10" >
+							
+
+									<img alt="" src="http://dataclient.net/lkpp-lpse/uploads/kota-yogyakarta1.png" class="img-responsive img-center">
+						</div>
+						<div class="col-md-8 col-sm-8 col-xs-12 mb-20">
+							<h5>LPSE Kota Yogyakarta</h5>
+							<h4>Nilai HPS : </h4>
+							<h3>Rp 299,602,533</h3>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12 mb-20">
+						<a href="http://localhost/inaproc/pengadaan/detail/2173021/1747021/2014-12-09%2008%3A00%3A00">Belanja Premi Asuransi Barang Milik Daerah (Premi Asuransi Bangunan Gedung/Bangunan Pemerintahan)</a>
+						<br/>
+					</div>
+						
+					<div class="w-footer col-md-4 col-sm-4 col-xs-12 text-center">
+						<p>Pengumuman Lelang : 09 Desember 2014</P>
+						<span class="price">Dilihat :  0</span>
+						<a href="http://localhost/inaproc/pengadaan/detail/2173021/1747021/2014-12-09%2008%3A00%3A00" class="btn btn-detail">Detail</a> <img src=http://localhost/inaproc/images/icon/lainnya.png>					</div>
+				</div>
+								<div class="col-md-12 col-sm-12 col-xs-12 box-lpse-list">
+					
+					<div class="col-md-4 col-sm-4 col-xs-12 no-padding" >
+												<div class="col-md-4 col-sm-4 col-xs-12 mb-10" >
+							
+
+									<img alt="" src="http://dataclient.net/lkpp-lpse/uploads/kota-yogyakarta1.png" class="img-responsive img-center">
+						</div>
+						<div class="col-md-8 col-sm-8 col-xs-12 mb-20">
+							<h5>LPSE Kota Yogyakarta</h5>
+							<h4>Nilai HPS : </h4>
+							<h3>Rp 408,834,000</h3>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12 mb-20">
+						<a href="http://localhost/inaproc/pengadaan/detail/2170021/1739021/2014-12-05%2015%3A31%3A00">Pengadaan Meubelair Asrama Pusdiklat Kemendagri Regional Yogyakarta</a>
+						<br/>
+					</div>
+						
+					<div class="w-footer col-md-4 col-sm-4 col-xs-12 text-center">
+						<p>Pengumuman Lelang : 05 Desember 2014</P>
+						<span class="price">Dilihat :  0</span>
+						<a href="http://localhost/inaproc/pengadaan/detail/2170021/1739021/2014-12-05%2015%3A31%3A00" class="btn btn-detail">Detail</a> <img src=http://localhost/inaproc/images/icon/pengadaanbarang.png>					</div>
+				</div>
+								<div class="col-md-12 col-sm-12 col-xs-12 box-lpse-list">
+					
+					<div class="col-md-4 col-sm-4 col-xs-12 no-padding" >
+												<div class="col-md-4 col-sm-4 col-xs-12 mb-10" >
+							
+
+									<img alt="" src="http://dataclient.net/lkpp-lpse/uploads/kota-yogyakarta1.png" class="img-responsive img-center">
+						</div>
+						<div class="col-md-8 col-sm-8 col-xs-12 mb-20">
+							<h5>LPSE Kota Yogyakarta</h5>
+							<h4>Nilai HPS : </h4>
+							<h3>Rp 331,237,000</h3>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12 mb-20">
+						<a href="http://localhost/inaproc/pengadaan/detail/2148021/1738021/2014-12-05%2008%3A00%3A00">Belanja Pakaian Kerja Lapangan</a>
+						<br/>
+					</div>
+						
+					<div class="w-footer col-md-4 col-sm-4 col-xs-12 text-center">
+						<p>Pengumuman Lelang : 05 Desember 2014</P>
+						<span class="price">Dilihat :  0</span>
+						<a href="http://localhost/inaproc/pengadaan/detail/2148021/1738021/2014-12-05%2008%3A00%3A00" class="btn btn-detail">Detail</a> <img src=http://localhost/inaproc/images/icon/pengadaanbarang.png>					</div>
+				</div>
+								<div class="col-md-12 col-sm-12 col-xs-12 box-lpse-list">
+					
+					<div class="col-md-4 col-sm-4 col-xs-12 no-padding" >
+												<div class="col-md-4 col-sm-4 col-xs-12 mb-10" >
+							
+
+									<img alt="" src="http://dataclient.net/lkpp-lpse/uploads/kota-yogyakarta1.png" class="img-responsive img-center">
+						</div>
+						<div class="col-md-8 col-sm-8 col-xs-12 mb-20">
+							<h5>LPSE Kota Yogyakarta</h5>
+							<h4>Nilai HPS : </h4>
+							<h3>Rp 552,428,400</h3>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12 mb-20">
+						<a href="http://localhost/inaproc/pengadaan/detail/2166021/1745021/2014-11-27%2008%3A00%3A00">Pengadaan Investasi  Alat   Medis : Liquid Base Cytologi  dll   Tahap II</a>
+						<br/>
+					</div>
+						
+					<div class="w-footer col-md-4 col-sm-4 col-xs-12 text-center">
+						<p>Pengumuman Lelang : 27 Nopember 2014</P>
+						<span class="price">Dilihat :  0</span>
+						<a href="http://localhost/inaproc/pengadaan/detail/2166021/1745021/2014-11-27%2008%3A00%3A00" class="btn btn-detail">Detail</a> <img src=http://localhost/inaproc/images/icon/pengadaanbarang.png>					</div>
+				</div>
+								<div class="col-md-12 col-sm-12 col-xs-12 box-lpse-list">
+					
+					<div class="col-md-4 col-sm-4 col-xs-12 no-padding" >
+												<div class="col-md-4 col-sm-4 col-xs-12 mb-10" >
+							
+
+									<img alt="" src="http://dataclient.net/lkpp-lpse/uploads/kota-yogyakarta1.png" class="img-responsive img-center">
+						</div>
+						<div class="col-md-8 col-sm-8 col-xs-12 mb-20">
+							<h5>LPSE Kota Yogyakarta</h5>
+							<h4>Nilai HPS : </h4>
+							<h3>Rp 276,100,000</h3>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12 mb-20">
+						<a href="http://localhost/inaproc/pengadaan/detail/2131021/1637021/2014-11-27%2008%3A00%3A00">PENGADAAN PERALATAN UKUR INSTRUMENTASI DAN GETARAN</a>
+						<br/>
+					</div>
+						
+					<div class="w-footer col-md-4 col-sm-4 col-xs-12 text-center">
+						<p>Pengumuman Lelang : 27 Nopember 2014</P>
+						<span class="price">Dilihat :  1</span>
+						<a href="http://localhost/inaproc/pengadaan/detail/2131021/1637021/2014-11-27%2008%3A00%3A00" class="btn btn-detail">Detail</a> <img src=http://localhost/inaproc/images/icon/pengadaanbarang.png>					</div>
+				</div>
+								<div class="col-md-12 col-sm-12 col-xs-12 box-lpse-list">
+					
+					<div class="col-md-4 col-sm-4 col-xs-12 no-padding" >
+												<div class="col-md-4 col-sm-4 col-xs-12 mb-10" >
+							
+
+									<img alt="" src="http://dataclient.net/lkpp-lpse/uploads/kota-yogyakarta1.png" class="img-responsive img-center">
+						</div>
+						<div class="col-md-8 col-sm-8 col-xs-12 mb-20">
+							<h5>LPSE Kota Yogyakarta</h5>
+							<h4>Nilai HPS : </h4>
+							<h3>Rp 322,300,000</h3>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12 mb-20">
+						<a href="http://localhost/inaproc/pengadaan/detail/2128021/1638021/2014-11-27%2008%3A00%3A00">PENGADAAN PERALATAN LABORATORIUM ELEKTRO DAN LISTRIK</a>
+						<br/>
+					</div>
+						
+					<div class="w-footer col-md-4 col-sm-4 col-xs-12 text-center">
+						<p>Pengumuman Lelang : 27 Nopember 2014</P>
+						<span class="price">Dilihat :  0</span>
+						<a href="http://localhost/inaproc/pengadaan/detail/2128021/1638021/2014-11-27%2008%3A00%3A00" class="btn btn-detail">Detail</a> <img src=http://localhost/inaproc/images/icon/pengadaanbarang.png>					</div>
+				</div>
+								<div class="col-md-12 col-sm-12 col-xs-12 box-lpse-list">
+					
+					<div class="col-md-4 col-sm-4 col-xs-12 no-padding" >
+												<div class="col-md-4 col-sm-4 col-xs-12 mb-10" >
+							
+
+									<img alt="" src="http://dataclient.net/lkpp-lpse/uploads/kota-yogyakarta1.png" class="img-responsive img-center">
+						</div>
+						<div class="col-md-8 col-sm-8 col-xs-12 mb-20">
+							<h5>LPSE Kota Yogyakarta</h5>
+							<h4>Nilai HPS : </h4>
+							<h3>Rp 582,889,700</h3>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12 mb-20">
+						<a href="http://localhost/inaproc/pengadaan/detail/2163021/1735021/2014-11-26%2008%3A00%3A00">Pembelian Alat dan Bahan Laboratorium</a>
+						<br/>
+					</div>
+						
+					<div class="w-footer col-md-4 col-sm-4 col-xs-12 text-center">
+						<p>Pengumuman Lelang : 26 Nopember 2014</P>
+						<span class="price">Dilihat :  0</span>
+						<a href="http://localhost/inaproc/pengadaan/detail/2163021/1735021/2014-11-26%2008%3A00%3A00" class="btn btn-detail">Detail</a> <img src=http://localhost/inaproc/images/icon/pengadaanbarang.png>					</div>
+				</div>
+						
+			</div>
+		</div>
+	</div>    
+</section>
+	
+<section>
+	<div class="w-section inverse">
+		<div class="container">
+			<div class="row no-margin">
+				<ul class="pagination pull-right">
+					<li><a href="http://localhost/inaproc/pengadaan/index/null/null/null/null/null/null/null/">&laquo;</a></li><li><a href="http://localhost/inaproc/pengadaan/index/null/null/null/null/null/null/null/">1</a></li><li><a><b>2</b></a></li><li><a href="http://localhost/inaproc/pengadaan/index/null/null/null/null/null/null/null/18">3</a></li><li><a href="http://localhost/inaproc/pengadaan/index/null/null/null/null/null/null/null/27">4</a></li><li><a href="http://localhost/inaproc/pengadaan/index/null/null/null/null/null/null/null/18">&raquo;</a></li>&nbsp;<a href="http://localhost/inaproc/pengadaan/index/null/null/null/null/null/null/null/45"></a>					<!-- <li><a href="#">&laquo;</a></li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">&raquo;</a></li> -->
+				</ul> 
+			</div>
+		</div>
+	</div>
+</section><footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            	&copy; Lembaga Kebijakan Pengadaan Barang/Jasa Pemerintah - Indonesia (LKPP)
+			</div>
+		</div>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script type="text/javascript" src="http://localhost/inaproc/assets/js/jquery.js"></script>
+<script type="text/javascript" src="http://localhost/inaproc/assets/js/scrolling-nav.js"></script>
+<script type="text/javascript" src="http://localhost/inaproc/assets/css/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://localhost/inaproc/assets/js/modernizr.custom.js"></script>
+<script type="text/javascript" src="http://localhost/inaproc/assets/js/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" src="http://localhost/inaproc/assets/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="http://localhost/inaproc/assets/js/jquery.easing.js"></script>
+
+<!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+<![endif]-->
+
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script>
+  $(function() {
+    var availableTags = ["LPSE Badan Informasi Geospasial - 399","LPSE Badan Intelijen Negara - 424","LPSE Badan Koordinasi Keluarga Berencana Nasional - 130","LPSE Badan Koordinasi Penanaman Modal - 384","LPSE Badan Meteorologi, Klimatologi dan Geofisika - 524","LPSE Badan Narkotika Nasional - 346","LPSE Badan Nasional Penanggulangan Bencana - 382","LPSE Badan Nasional Penanggulangan Terorisme - 547","LPSE Badan Nasional Penempatan dan Perlindungan Tenaga Kerja Indonesia - 158","LPSE Badan Nasional Pengelola Perbatasan - 657","LPSE Badan Pengawas Obat dan Makanan - 191","LPSE Badan Pengkajian dan Penerapan Teknologi - 69","LPSE Badan Pengusaha Batam - 538","LPSE Badan Pertanahan Nasional - 65","LPSE Badan Pusat Statistik - 275","LPSE Badan SAR Nasional - 469","LPSE Dewan Perwakilan Daerah Republik Indonesia - 556","LPSE Dewan Perwakilan Rakyat Republik Indonesia - 87","LPSE Institut Agama Islam Negeri Raden Fatah Palembang - 465","LPSE Institut Agama Islam Negeri Raden Intan Lampung - 403","LPSE Institut Teknologi Bandung - 137","LPSE Institut Teknologi Sepuluh Nopember - 68","LPSE Jasamarga - 651","LPSE Kabupaten Aceh Barat - 498","LPSE Kabupaten Aceh Barat Daya - 625","LPSE Kabupaten Aceh Besar - 426","LPSE Kabupaten Aceh Jaya - 628","LPSE Kabupaten Aceh Selatan - 460","LPSE Kabupaten Aceh Singkil - 508","LPSE Kabupaten Aceh Tamiang - 505","LPSE Kabupaten Aceh Tengah - 296","LPSE Kabupaten Aceh Tenggara - 330","LPSE Kabupaten Aceh Timur - 517","LPSE Kabupaten Aceh Utara - 189","LPSE Kabupaten Agam - 645","LPSE Kabupaten Anambas - 365","LPSE Kabupaten Asahan - 407","LPSE Kabupaten Badung - 113","LPSE Kabupaten Balangan - 56","LPSE Kabupaten Bandung - 93","LPSE Kabupaten Bandung Barat - 1004","LPSE Kabupaten Banggai - 456","LPSE Kabupaten Banggai Kepulauan - 626","LPSE Kabupaten Bangka - 31","LPSE Kabupaten Bangka Barat - 340","LPSE Kabupaten Bangka Selatan - 369","LPSE Kabupaten Bangka Tengah - 139","LPSE Kabupaten Bangkalan - 500","LPSE Kabupaten Bangli - 553","LPSE Kabupaten Banjar - 197","LPSE Kabupaten Banjarnegara - 129","LPSE Kabupaten Bantaeng - 630","LPSE Kabupaten Bantul - 285","LPSE Kabupaten Banyuasin - 153","LPSE Kabupaten Banyumas - 60","LPSE Kabupaten Banyuwangi - 72","LPSE Kabupaten Barito Kuala - 270","LPSE Kabupaten Barito Selatan - 353","LPSE Kabupaten Barito Timur - 392","LPSE Kabupaten Barito Utara - 458","LPSE Kabupaten Barru - 619","LPSE Kabupaten Batang - 209","LPSE Kabupaten Batanghari - 226","LPSE Kabupaten Batu Bara - 676","LPSE Kabupaten Bekasi - 352","LPSE Kabupaten Belitung - 258","LPSE Kabupaten Belitung Timur - 179","LPSE Kabupaten Belu - 374","LPSE Kabupaten Bener Meriah - 592","LPSE Kabupaten Bengkalis - 161","LPSE Kabupaten Bengkayang - 444","LPSE Kabupaten Bengkulu Selatan - 320","LPSE Kabupaten Bengkulu Tengah - 515","LPSE Kabupaten Bengkulu Utara - 238","LPSE Kabupaten Berau - 43","LPSE Kabupaten Bima - 539","LPSE Kabupaten Bintan - 495","LPSE Kabupaten Bireuen - 514","LPSE Kabupaten Blitar - 203","LPSE Kabupaten Blora - 257","LPSE Kabupaten Boalemo - 463","LPSE Kabupaten Bogor - 601","LPSE Kabupaten Bojonegoro - 244","LPSE Kabupaten Bolaang Mongondow - 475","LPSE Kabupaten Bolaang Mongondow Selatan - 552","LPSE Kabupaten Bolaang Mongondow Timur - 650","LPSE Kabupaten Bolaang Mongondow Utara - 344","LPSE Kabupaten Bombana - 492","LPSE Kabupaten Bondowoso - 472","LPSE Kabupaten Bone - 566","LPSE Kabupaten Bone Bolango - 417","LPSE Kabupaten Boyolali - 280","LPSE Kabupaten Brebes - 148","LPSE Kabupaten Buleleng - 358","LPSE Kabupaten Bulukumba - 292","LPSE Kabupaten Bulungan - 268","LPSE Kabupaten Bungo - 425","LPSE Kabupaten Buton - 451","LPSE Kabupaten Buton Utara - 623","LPSE Kabupaten Ciamis - 672","LPSE Kabupaten Cianjur - 418","LPSE Kabupaten Cilacap - 286","LPSE Kabupaten Cirebon - 398","LPSE Kabupaten Dairi - 462","LPSE Kabupaten Deli Serdang - 549","LPSE Kabupaten Demak - 423","LPSE Kabupaten Dharmasraya - 443","LPSE Kabupaten Dompu - 479","LPSE Kabupaten Donggala - 242","LPSE Kabupaten Empat Lawang - 585","LPSE Kabupaten Ende - 135","LPSE Kabupaten Enrekang - 231","LPSE Kabupaten Flores Timur - 631","LPSE Kabupaten Garut - 1008","LPSE Kabupaten Gayo Lues - 497","LPSE Kabupaten Gianyar - 350","LPSE Kabupaten Gorontalo - 606","LPSE Kabupaten Gorontalo Utara - 452","LPSE Kabupaten Gowa - 644","LPSE Kabupaten Gresik - 122","LPSE Kabupaten Grobogan - 211","LPSE Kabupaten Gunung Kidul - 621","LPSE Kabupaten Gunung Mas - 379","LPSE Kabupaten Halmahera Selatan - 421","LPSE Kabupaten Halmahera Utara - 233","LPSE Kabupaten Hulu Sungai Selatan - 282","LPSE Kabupaten Hulu Sungai Tengah - 315","LPSE Kabupaten Hulu Sungai Utara - 85","LPSE Kabupaten Humbang Hasundutan - 420","LPSE Kabupaten Indragiri Hilir - 165","LPSE Kabupaten Indragiri Hulu - 376","LPSE Kabupaten Indramayu - 589","LPSE Kabupaten Indramayu - 1006","LPSE Kabupaten Jember - 200","LPSE Kabupaten Jembrana - 167","LPSE Kabupaten Jeneponto - 466","LPSE Kabupaten Jepara - 182","LPSE Kabupaten Jombang - 116","LPSE Kabupaten Kampar - 232","LPSE Kabupaten Kapuas - 322","LPSE Kabupaten Kapuas Hulu - 488","LPSE Kabupaten Karanganyar - 141","LPSE Kabupaten Karangasem - 513","LPSE Kabupaten Karimun - 147","LPSE Kabupaten Karo - 516","LPSE Kabupaten Katingan - 438","LPSE Kabupaten Kaur - 431","LPSE Kabupaten Kay Kanan - 629","LPSE Kabupaten Kayong Utara - 393","LPSE Kabupaten Kebumen - 53","LPSE Kabupaten Kediri - 207","LPSE Kabupaten Keerom - 583","LPSE Kabupaten Kendal - 501","LPSE Kabupaten Kepahiang - 377","LPSE Kabupaten Kepulauan Aru - 674","LPSE Kabupaten Kepulauan Mentawai - 489","LPSE Kabupaten Kepulauan Pangkajene - 509","LPSE Kabupaten Kepulauan Sangihe - 506","LPSE Kabupaten Kepulauan Selayar - 570","LPSE Kabupaten Kerinci - 155","LPSE Kabupaten Ketapang - 110","LPSE Kabupaten Klaten - 51","LPSE Kabupaten Klungkung - 433","LPSE Kabupaten Kolaka - 474","LPSE Kabupaten Kolaka Utara - 620","LPSE Kabupaten Komering Ulu Selatan - 343","LPSE Kabupaten Konawe - 525","LPSE Kabupaten Konawe Kepulauan - 658","LPSE Kabupaten Konawe Selatan - 430","LPSE Kabupaten Konawe Utara - 587","LPSE Kabupaten Kotabaru - 427","LPSE Kabupaten Kotawaringin Barat - 176","LPSE Kabupaten Kotawaringin Timur - 183","LPSE Kabupaten Kuantan Singingi - 186","LPSE Kabupaten Kuburaya - 188","LPSE Kabupaten Kudus - 94","LPSE Kabupaten Kulon Progo - 367","LPSE Kabupaten Kuningan - 339","LPSE Kabupaten Kupang - 551","LPSE Kabupaten Kutai Barat - 249","LPSE Kabupaten Kutai Kartanegara - 198","LPSE Kabupaten Kutai Timur - 364","LPSE Kabupaten Labuan Batu Selatan - 412","LPSE Kabupaten Labuhan Batu - 481","LPSE Kabupaten Labuhan Batu Utara - 604","LPSE Kabupaten Lahat - 434","LPSE Kabupaten Lamandau - 306","LPSE Kabupaten Lamongan - 57","LPSE Kabupaten Lampung Barat - 305","LPSE Kabupaten Lampung Selatan - 217","LPSE Kabupaten Lampung Tengah - 237","LPSE Kabupaten Lampung Timur - 166","LPSE Kabupaten Lampung Utara - 328","LPSE Kabupaten Landak - 496","LPSE Kabupaten Langkat - 304","LPSE Kabupaten Lebak - 98","LPSE Kabupaten Lebong - 239","LPSE Kabupaten Lima Puluh Kota - 610","LPSE Kabupaten Lombok Barat - 381","LPSE Kabupaten Lombok Tengah - 120","LPSE Kabupaten Lombok Timur - 395","LPSE Kabupaten Lombok Utara - 487","LPSE Kabupaten Lumajang - 256","LPSE Kabupaten Luwu - 502","LPSE Kabupaten Luwu Timur - 422","LPSE Kabupaten Luwu Utara - 45","LPSE Kabupaten Madiun - 204","LPSE Kabupaten Magelang - 115","LPSE Kabupaten Magetan - 255","LPSE Kabupaten Majalengka - 253","LPSE Kabupaten Majene - 400","LPSE Kabupaten Malaka - 684","LPSE Kabupaten Malang - 247","LPSE Kabupaten Malinau - 321","LPSE Kabupaten Maluku Tenggara - 618","LPSE Kabupaten Mamuju - 289","LPSE Kabupaten Mandailing Natal - 373","LPSE Kabupaten Manggarai - 633","LPSE Kabupaten Manggarai Barat - 409","LPSE Kabupaten Manggarai Timur - 461","LPSE Kabupaten Manokwari - 435","LPSE Kabupaten Maros - 250","LPSE Kabupaten Melawi - 540","LPSE Kabupaten Merangin - 614","LPSE Kabupaten Meranti - 459","LPSE Kabupaten Merauke - 271","LPSE Kabupaten Mimika - 639","LPSE Kabupaten Minahasa - 406","LPSE Kabupaten Minahasa Selatan - 436","LPSE Kabupaten Minahasa Tenggara - 284","LPSE Kabupaten Minahasa Utara - 219","LPSE Kabupaten Mojokerto - 300","LPSE Kabupaten Morowali - 295","LPSE Kabupaten Morowali Utara - 678","LPSE Kabupaten Muara Enim - 107","LPSE Kabupaten Muaro Jambi - 269","LPSE Kabupaten Muko Muko - 348","LPSE Kabupaten Muna - 441","LPSE Kabupaten Murung Raya - 510","LPSE Kabupaten Musi Banyuasin - 168","LPSE Kabupaten Musi Rawas - 311","LPSE Kabupaten Nagan Raya - 548","LPSE Kabupaten Nagekeo - 666","LPSE Kabupaten Natuna - 355","LPSE Kabupaten Ngada - 310","LPSE Kabupaten Nganjuk - 152","LPSE Kabupaten Ngawi - 78","LPSE Kabupaten Nias - 593","LPSE Kabupaten Nias Barat - 669","LPSE Kabupaten Nias Selatan - 567","LPSE Kabupaten Nias Utara - 642","LPSE Kabupaten Nunukan - 338","LPSE Kabupaten Ogan Ilir - 357","LPSE Kabupaten Ogan Komering Ilir - 156","LPSE Kabupaten Ogan Komering Ulu - 401","LPSE Kabupaten Ogan Komering Ulu Timur - 447","LPSE Kabupaten Pacitan - 58","LPSE Kabupaten Padang Lawas Utara - 471","LPSE Kabupaten Pakpak Bharat - 634","LPSE Kabupaten Pamekasan - 453","LPSE Kabupaten Pandeglang - 470","LPSE Kabupaten Parigi Moutong - 149","LPSE Kabupaten Pasaman - 223","LPSE Kabupaten Pasaman Barat - 301","LPSE Kabupaten Paser - 52","LPSE Kabupaten Pasuruan - 380","LPSE Kabupaten Pati - 334","LPSE Kabupaten Pekalongan - 202","LPSE Kabupaten Pelalawan - 254","LPSE Kabupaten Pemalang - 90","LPSE Kabupaten Penajam Paser Utara - 264","LPSE Kabupaten Penukal Abab Lematang Ilir - 661","LPSE Kabupaten Pesawaran - 274","LPSE Kabupaten Pesisir Selatan - 599","LPSE Kabupaten Pidie - 565","LPSE Kabupaten Pidie Jaya - 595","LPSE Kabupaten Pinrang - 206","LPSE Kabupaten Pohuwato - 325","LPSE Kabupaten Polewali Mandar - 281","LPSE Kabupaten Ponorogo - 360","LPSE Kabupaten Pontianak - 118","LPSE Kabupaten Poso - 586","LPSE Kabupaten Pringsewu - 337","LPSE Kabupaten Probolinggo - 319","LPSE Kabupaten Pulang Pisau - 483","LPSE Kabupaten Pulau Morotai - 477","LPSE Kabupaten Purbalingga - 140","LPSE Kabupaten Purwakarta - 667","LPSE Kabupaten Purworejo - 146","LPSE Kabupaten Raja Ampat - 607","LPSE Kabupaten Rejang Lebong - 390","LPSE Kabupaten Rembang - 375","LPSE Kabupaten Rokan Hilir - 484","LPSE Kabupaten Rokan Hulu - 283","LPSE Kabupaten Rote Ndao - 473","LPSE Kabupaten Sabu Raijua - 617","LPSE Kabupaten Sambas - 354","LPSE Kabupaten Samosir - 342","LPSE Kabupaten Sampang - 413","LPSE Kabupaten Sanggau - 298","LPSE Kabupaten Sarolangun - 230","LPSE Kabupaten Sekadau - 175","LPSE Kabupaten Seluma - 564","LPSE Kabupaten Semarang - 32","LPSE Kabupaten Serang - 245","LPSE Kabupaten Serdang Bedagai - 378","LPSE Kabupaten Seruyan - 336","LPSE Kabupaten Siak - 309","LPSE Kabupaten Siau Tagulandang Biaro - 294","LPSE Kabupaten Sidenreng Rappang - 404","LPSE Kabupaten Sidoarjo - 111","LPSE Kabupaten Sigi - 437","LPSE Kabupaten Sijunjung - 615","LPSE Kabupaten Sikka - 611","LPSE Kabupaten Simalungun - 494","LPSE Kabupaten Simeulue - 383","LPSE Kabupaten Sinjai - 265","LPSE Kabupaten Sintang - 345","LPSE Kabupaten Situbondo - 246","LPSE Kabupaten Sleman - 54","LPSE Kabupaten Solok - 608","LPSE Kabupaten Soppeng - 521","LPSE Kabupaten Sragen - 228","LPSE Kabupaten Sukabumi - 609","LPSE Kabupaten Sukamara - 414","LPSE Kabupaten Sukoharjo - 160","LPSE Kabupaten Sumba Barat - 457","LPSE Kabupaten Sumba Barat Daya - 561","LPSE Kabupaten Sumba Tengah - 562","LPSE Kabupaten Sumba Timur - 612","LPSE Kabupaten Sumbawa - 222","LPSE Kabupaten Sumbawa Barat - 133","LPSE Kabupaten Sumedang - 432","LPSE Kabupaten Sumenep - 248","LPSE Kabupaten Tabalong - 59","LPSE Kabupaten Tabanan - 504","LPSE Kabupaten Takalar - 643","LPSE Kabupaten Talaud - 665","LPSE Kabupaten Tana Tidung - 594","LPSE Kabupaten Tana Toraja - 622","LPSE Kabupaten Tanah Bumbu - 317","LPSE Kabupaten Tanah Datar - 157","LPSE Kabupaten Tanah Laut - 172","LPSE Kabupaten Tangerang - 333","LPSE Kabupaten Tanjung Jabung Barat - 290","LPSE Kabupaten Tanjung Jabung Timur - 331","LPSE Kabupaten Tapanuli Selatan - 597","LPSE Kabupaten Tapanuli Tengah - 652","LPSE Kabupaten Tapanuli Utara - 277","LPSE Kabupaten Tapin - 177","LPSE Kabupaten Tasikmalaya - 332","LPSE Kabupaten Tebo - 326","LPSE Kabupaten Tegal - 287","LPSE Kabupaten Temanggung - 138","LPSE Kabupaten Timor Tengah Selatan - 507","LPSE Kabupaten Toba Samosir - 558","LPSE Kabupaten Tojo una-una - 187","LPSE Kabupaten Tolitoli - 511","LPSE Kabupaten Toraja Utara - 640","LPSE Kabupaten Trenggalek - 391","LPSE Kabupaten Tuban - 415","LPSE Kabupaten Tulang Bawang - 394","LPSE Kabupaten Tulang Bawang Barat - 486","LPSE Kabupaten Tulungagung - 449","LPSE Kabupaten Wajo - 335","LPSE Kabupaten Wakatobi - 448","LPSE Kabupaten Wonogiri - 314","LPSE Kabupaten Wonosobo - 220","LPSE Kejaksaan Agung - 670","LPSE Kemanterian Pertahanan Republik Indonesia - 482","LPSE Kementerian Agama - 170","LPSE Kementerian Dalam Negeri - 105","LPSE Kementerian Energi dan Sumber Daya Mineral - 109","LPSE Kementerian Hukum dan HAM RI - 252","LPSE Kementerian Kehutanan - 291","LPSE Kementerian Kelautan dan Perikanan - 218","LPSE Kementerian Keuangan - 11","LPSE Kementerian Koperasi dan UKM - 371","LPSE Kementerian Lingkungan Hidup - 563","LPSE Kementerian Luar Negeri - 136","LPSE Kementerian Pariwisata dan Ekonomi Kreatif Indonesia - 386","LPSE Kementerian Pembangunan Daerah Tertinggal - 243","LPSE Kementerian Pemuda dan Olahraga - 519","LPSE Kementerian Pendayagunaan Aparatur Negara dan Reformasi Birokrasi - 366","LPSE Kementerian Pendidikan dan Kebudayaan - 25","LPSE Kementerian Perdagangan RI - 276","LPSE Kementerian Perhubungan - 114","LPSE Kementerian Perindustrian - 126","LPSE Kementerian Pertanian - 212","LPSE Kementerian Perumahan Rakyat - 64","LPSE Kementerian Riset dan Teknologi - 273","LPSE Kementerian Sosial - 323","LPSE Kementerian Tenaga Kerja dan Transmigrasi - 194","LPSE Kementrian Kesehatan R.I. - 47","LPSE Kementrian Pekerjaan Umum - 627","LPSE Kepolisian Republik Indonesia - 44","LPSE Kota Ambon - 654","LPSE Kota Balikpapan - 316","LPSE Kota Banda Aceh - 20","LPSE Kota Bandar Lampung - 193","LPSE Kota Bandung - 260","LPSE Kota Banjar - 428","LPSE Kota Banjarbaru - 23","LPSE Kota Banjarmasin - 24","LPSE Kota Batam - 26","LPSE Kota Batu - 201","LPSE Kota Baubau - 405","LPSE Kota Bekasi - 359","LPSE Kota Bengkulu - 278","LPSE Kota Bima - 464","LPSE Kota Binjai - 598","LPSE Kota Bitung - 329","LPSE Kota Blitar - 205","LPSE Kota Bogor - 163","LPSE Kota Bontang - 312","LPSE Kota Bukittinggi - 297","LPSE Kota Cilegon - 318","LPSE Kota Cimahi - 299","LPSE Kota Cirebon - 503","LPSE Kota Denpasar - 17","LPSE Kota Depok - 34","LPSE Kota Dumai - 313","LPSE Kota Gorontalo - 1009","LPSE Kota Gunungsitoli - 478","LPSE Kota Jambi - 259","LPSE Kota Jayapura - 613","LPSE Kota Kediri - 590","LPSE Kota Kendari - 571","LPSE Kota Kotamobagu - 180","LPSE Kota Kupang - 439","LPSE Kota Langsa - 370","LPSE Kota Lhokseumawe - 261","LPSE Kota Lubuklinggau - 195","LPSE Kota Madiun - 164","LPSE Kota Magelang - 279","LPSE Kota Makassar - 234","LPSE Kota Malang - 192","LPSE Kota Manado - 349","LPSE Kota Mataram - 396","LPSE Kota Medan - 308","LPSE Kota Metro - 150","LPSE Kota Mojokerto - 324","LPSE Kota Padang - 624","LPSE Kota Padang Sidempuan - 523","LPSE Kota Pagar Alam - 142","LPSE Kota Palangkaraya - 372","LPSE Kota Palembang - 251","LPSE Kota Palopo - 347","LPSE Kota Palu - 214","LPSE Kota Pangkal Pinang - 96","LPSE Kota Pare-pare - 235","LPSE Kota Pariaman - 663","LPSE Kota Pasuruan - 419","LPSE Kota Payakumbuh - 50","LPSE Kota Pekalongan - 91","LPSE Kota Pekanbaru - 19","LPSE Kota Pematangsiantar - 526","LPSE Kota Pontianak - 62","LPSE Kota Prabumulih - 102","LPSE Kota Probolinggo - 410","LPSE Kota Sabang - 151","LPSE Kota Salatiga - 88","LPSE Kota Samarinda - 596","LPSE Kota Semarang - 108","LPSE Kota Serang - 493","LPSE Kota Singkawang - 132","LPSE Kota Solok - 385","LPSE Kota Subulussalam - 550","LPSE Kota Sungai Penuh - 450","LPSE Kota Surabaya - 10","LPSE Kota Surakarta - 104","LPSE Kota Tangerang - 66","LPSE Kota Tangerang Selatan - 225","LPSE Kota Tanjung Balai - 388","LPSE Kota Tanjung Pinang - 673","LPSE Kota Tarakan - 184","LPSE Kota Tasikmalaya - 440","LPSE Kota Tebing Tinggi - 445","LPSE Kota Tegal - 48","LPSE Kota Ternate - 341","LPSE Kota Tidore Kepulauan - 518","LPSE Kota Tomohon - 554","LPSE Kota Yogyakarta - 21","LPSE LAPAN - 653","LPSE Lembaga Ilmu Pengetahuan Indonesia - 362","LPSE Lembaga Kebijakan Pengadaan Barang\/Jasa Pemerintah - 119","LPSE Lembaga Ketahanan Nasional - 649","LPSE Lembaga Sandi Negara - 491","LPSE Mahkamah Agung Republik Indonesia - 555","LPSE Mahkamah Konstitusi - 95","LPSE Mahkamah Syar'iyah Aceh - 411","LPSE Majelis Permusyawaratan Rakyat Republik Indonesia - 210","LPSE Pelabuhan Indonesia 1 Medan - 557","LPSE Politeknik Negeri Bandung - 389","LPSE Politeknik Negeri Jakarta - 368","LPSE Politeknik Negeri Jember - 520","LPSE Politeknik Negeri Lampung - 46","LPSE Politeknik Negeri Malang - 442","LPSE Politeknik Negeri Manado - 659","LPSE Politeknik Negeri Sriwijaya - 356","LPSE Politeknik Negeri Ujung Pandang - 455","LPSE Politeknik Pertanian Negeri Pangkep - 635","LPSE Provinsi Aceh - 106","LPSE Provinsi Bali - 33","LPSE Provinsi Banten - 99","LPSE Provinsi Bengkulu - 267","LPSE Provinsi Daerah Istimewa Yogyakarta - 13","LPSE Provinsi Daerah Khusus Ibukota Jakarta - 127","LPSE Provinsi Gorontalo - 18","LPSE Provinsi Jambi - 70","LPSE Provinsi Jawa Barat - 14","LPSE Provinsi Jawa Tengah - 42","LPSE Provinsi Jawa Timur - 15","LPSE Provinsi Kalimantan Barat - 97","LPSE Provinsi Kalimantan Selatan - 181","LPSE Provinsi Kalimantan Tengah - 12","LPSE Provinsi Kalimantan Timur - 35","LPSE Provinsi Kepulauan Bangka Belitung - 86","LPSE Provinsi Kepulauan Riau - 22","LPSE Provinsi Lampung - 121","LPSE Provinsi Maluku - 288","LPSE Provinsi Maluku Utara - 361","LPSE Provinsi Nusa Tenggara Barat - 37","LPSE Provinsi Nusa Tenggara Timur - 131","LPSE Provinsi Papua - 41","LPSE Provinsi Papua Barat - 641","LPSE Provinsi Riau - 39","LPSE Provinsi Sulawesi Barat - 263","LPSE Provinsi Sulawesi Selatan - 36","LPSE Provinsi Sulawesi Tengah - 154","LPSE Provinsi Sulawesi Tenggara - 81","LPSE Provinsi Sulawesi Utara - 173","LPSE Provinsi Sumatera Barat - 16","LPSE Provinsi Sumatera Selatan - 103","LPSE Provinsi Sumatera Utara - 27","LPSE PT Angkasa Pura II (Persero) - 616","LPSE PT. Kawasan Berikat Nusantara - 28","LPSE PT. Pelayaran Nasional Indonesia - 92","LPSE PT. Perusahaan Listrik Negara - 100","LPSE RS. Wahidin Sudirohusodo - 171","LPSE RSJ Dr. Radjiman Wediodiningrat - 215","LPSE Sekolah Tinggi Agama Islam Negeri Jember - 229","LPSE Sekolah Tinggi Pariwisata Nusa Dua Bali - 467","LPSE Sekretariat Jenderal Dewan Ketahanan Nasional - 528","LPSE STAIN Bukittinggi - 646","LPSE STAIN Parepare - 397","LPSE Televisi Republik Indonesia - 236","LPSE Tentara Nasional Indonesia - 603","LPSE TNI Angkatan Darat - 638","LPSE TNI ANGKATAN UDARA - 605","LPSE Universitas Airlangga - 262","LPSE Universitas Andalas - 302","LPSE Universitas Bandar Lampung - 240","LPSE Universitas Bengkulu - 185","LPSE Universitas Brawijaya - 128","LPSE Universitas Diponegoro - 29","LPSE Universitas Gadjah Mada - 303","LPSE Universitas Haluoleo - 402","LPSE Universitas Hasanudin - 174","LPSE Universitas Indonesia - 190","LPSE Universitas Islam Negeri Alauddin Makasar - 416","LPSE Universitas Jambi - 408","LPSE Universitas Jember - 241","LPSE Universitas Jenderal Soedirman - 227","LPSE Universitas Lambung Mangkurat - 560","LPSE Universitas Lampung - 490","LPSE Universitas Malikussaleh - 480","LPSE Universitas Mulawarman - 169","LPSE Universitas Negeri 11 Maret - 637","LPSE Universitas Negeri Gorontalo - 429","LPSE Universitas Negeri Makassar - 30","LPSE Universitas Negeri Malang - 363","LPSE Universitas Negeri Manado - 387","LPSE Universitas Negeri Medan - 38","LPSE Universitas Negeri Padang - 293","LPSE Universitas Negeri Semarang - 216","LPSE Universitas Negeri Surabaya - 162","LPSE Universitas Palangka Raya - 512","LPSE Universitas Riau - 499","LPSE Universitas Sam Ratulangi - 584","LPSE Universitas Sriwijaya - 221","LPSE Universitas Sumatera Utara - 272","LPSE Universitas Syiah Kuala Banda Aceh - 468","LPSE Universitas Tadulako - 213","LPSE Universitas Tanjung Pura - 224","LPSE Universitas Udayana - 446","tes - 2000"]
+    $( "#autoLPSE" ).autocomplete({
+      source: availableTags
+    });
+  });
+  </script>
+
+<!-- Plugins -->
+<script type="text/javascript" src="http://localhost/inaproc/assets/js/bootstrap-hover-dropdown.min.js"></script>
+<script type="text/javascript" src="http://localhost/inaproc/assets/js/masonry.js"></script>
+<script type="text/javascript" src="http://localhost/inaproc/assets/js/jquery.ui.totop.min.js"></script>
+<script type="text/javascript" src="http://localhost/inaproc/assets/js/jquery.mixitup.js"></script>
+<script type="text/javascript" src="http://localhost/inaproc/assets/js/jquery.mixitup.init.js"></script>
+<script type="text/javascript" src="http://localhost/inaproc/assets/css/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script type="text/javascript" src="http://localhost/inaproc/assets/css/easy-pie-chart/jquery.easypiechart.js"></script>
+<script type="text/javascript" src="http://localhost/inaproc/assets/js/waypoints.min.js"></script>
+<script type="text/javascript" src="http://localhost/inaproc/assets/js/jquery.sticky.js"></script>
+<script type="text/javascript" src="http://localhost/inaproc/assets/js/jquery.wp.custom.js"></script>
+<script type="text/javascript" src="http://localhost/inaproc/assets/js/jquery.wp.switcher.js"></script>
+<script src="http://localhost/inaproc/assets/css/layerslider/js/greensock.js" type="text/javascript"></script>
+<!-- LayerSlider script files -->
+<script src="http://localhost/inaproc/assets/css/layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
+<script src="http://localhost/inaproc/assets/css/layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+<!-- Initializing the slider -->
+	<script>
+		jQuery("#layerslider").layerSlider({
+			pauseOnHover: true,
+			autoPlayVideos: false,
+			skinsPath: 'http://localhost/inaproc/assets/css/layerslider/skins/',
+			responsive: false,
+			responsiveUnder: 1280,
+			layersContainer: 1280,
+			skin: 'borderlessdark3d',
+			hoverPrevNext: false,
+		});
+	</script>
+
+	<script>
+	function fadeList() {
+		$("#pengadaan_box").fadeOut();
+		$("#pengadaan_list").fadeIn();	
+	}
+	
+	function fadeBox() {
+		$("#pengadaan_box").fadeIn();
+		$("#pengadaan_list").fadeOut();
+	}
+   </script>
+
+   <script type="text/javascript">
+		var baseurl = "http://localhost/inaproc/";
+	</script>
+</body>
+</html>
