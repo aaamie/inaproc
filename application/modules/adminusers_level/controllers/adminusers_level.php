@@ -3,7 +3,7 @@
 class adminusers_level extends MX_Controller  {
 	
 	var $table = "adminusers_level";
-	var $table_alias = "Admin User Level";
+	var $table_alias = "Admins Level";
 	var $uri_page = 6;
 	var $per_page = 25;
 	 

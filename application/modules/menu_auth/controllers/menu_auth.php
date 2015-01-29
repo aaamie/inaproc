@@ -3,7 +3,7 @@
 class menu_auth extends MX_Controller  {
 	
 	var $table = "menu_auth";
-	var $table_alias = "Admin Menu Auth";
+	var $table_alias = "Admins Authorize";
 	var $uri_page = 6;
 	var $per_page = 25;
 	 
